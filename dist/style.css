@@ -517,8 +517,8 @@ input {
   body .header .headerInfo .contHeaderLeft .contHeaderText .textBelarusASNG {
     font-weight: 600;
     font-style: normal;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
   body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg {
     margin-bottom: 0px;
@@ -535,8 +535,8 @@ input {
     max-width: 292px;
     font-weight: 600;
     font-style: normal;
-    font-size: 20px;
-    line-height: 24.3px;
+    font-size: 1.25rem;
+    line-height: 1.5188rem;
   }
   body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButtonWhiteRect {
     display: none;
@@ -550,6 +550,7 @@ input {
   padding-top: 6rem;
   padding-bottom: 6.375rem;
   gap: 3.75rem;
+  max-width: 82rem;
 }
 .questions .titleQuestions {
   text-align: center;
@@ -575,8 +576,8 @@ input {
 .questions .contQuestions .questList .questItem .contNumber .questNumber {
   font-weight: 300;
   font-style: normal;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 3.125rem;
+  line-height: 3.8125rem;
   text-shadow: 0.125rem 0 0 rgb(254, 209, 0);
 }
 .questions .contQuestions .questList .questItem .contText {
@@ -606,6 +607,7 @@ input {
     padding-top: 6.25rem;
     gap: 3.25rem;
     padding-bottom: 12.8125rem;
+    max-width: 37.4375rem;
   }
   .questions .contQuestions .questList {
     max-width: 32.9rem;
@@ -654,8 +656,8 @@ input {
   .questions .titleQuestions {
     font-weight: 600;
     font-style: normal;
-    font-size: 20px;
-    line-height: 24.3px;
+    font-size: 1.25rem;
+    line-height: 1.5188rem;
   }
   .questions .contQuestions .questList .questItem {
     align-items: center;
@@ -665,8 +667,8 @@ input {
   .questions .contQuestions .questList .questItem .contNumber .questNumber {
     font-weight: 300;
     font-style: normal;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 3.125rem;
+    line-height: 3.8125rem;
   }
   .questions .contQuestions .questList .questItem .contText {
     flex-direction: row;
@@ -675,8 +677,8 @@ input {
   .questions .contQuestions .questList .questItem .contText .questTitle {
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
   }
   .questions .contQuestions .questList .questItem .contText .questDiscriptions {
     display: none;
@@ -685,5 +687,278 @@ input {
     display: inline;
     width: 20px;
     height: 11px;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price .contPrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.75rem;
+  max-width: 81.5625rem;
+  width: 100%;
+}
+.price .contPrice .contPriceTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.price .contPrice .contPriceTitle .priceTitleTextH2 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.875rem;
+  line-height: 2.2813rem;
+}
+.price .contPrice .contPriceTitle .priceTitleTextH3 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.price .contPrice .contList {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.price .contPrice .contList .contItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 26.3125rem;
+  height: 36.1875rem;
+  width: 100%;
+  padding-top: 5.25rem;
+  border: 0.0625rem solid rgb(235, 235, 235);
+  display: flex;
+  gap: 3.75rem;
+}
+.price .contPrice .contList .contItem .titleItem {
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.price .contPrice .contList .contItem .contDescriptionItem {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.625rem;
+  text-align: center;
+}
+.price .contPrice .contList .contItem:nth-child(2) {
+  border: 0.0625rem solid rgb(254, 209, 0);
+}
+.price .contPrice .contList .contBuy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.25rem;
+  padding: 0rem 5rem;
+  width: 100%;
+}
+.price .contPrice .contList .contBuy .itemPrice {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.875rem;
+  line-height: 2.2813rem;
+}
+.price .contPrice .contList .contBuy .buttonBuy {
+  display: grid;
+  place-items: center;
+  max-width: 15.625rem;
+  width: 100%;
+  height: 3.2088rem;
+  background-color: rgb(254, 209, 0);
+}
+.price .contPrice .contAllPrice {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .price {
+    background-color: rgb(248, 251, 255);
+    padding-top: 3.75rem;
+    width: 100%;
+    padding-bottom: 8.0625rem;
+  }
+  .price .contPrice {
+    justify-content: center;
+    gap: 2.8125rem;
+  }
+  .price .contPrice .contPriceTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .price .contPrice .contPriceTitle .priceTitleTextH2 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.875rem;
+    line-height: 2.2813rem;
+  }
+  .price .contPrice .contPriceTitle .priceTitleTextH3 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    max-width: 34.375rem;
+    width: 100%;
+  }
+  .price .contPrice .contList .contItem {
+    height: 100%;
+    display: none;
+    padding: 0rem;
+    border: none;
+    gap: 1.9375rem;
+  }
+  .price .contPrice .contList .contItem .titleItem {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .price .contPrice .contList .contItem .contDescriptionItem {
+    gap: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.4781rem;
+  }
+  .price .contPrice .contList .contItem:nth-child(2) {
+    display: flex;
+    border: none;
+  }
+  .price .contPrice .contList .contBuy {
+    margin-top: 1.0625rem;
+    gap: 1rem;
+    padding: 0rem;
+  }
+  .price .contPrice .contList .contBuy .itemPrice {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.875rem;
+    line-height: 2.2813rem;
+  }
+  .price .contPrice .contList .contBuy .buttonBuy {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    max-width: 22.375rem;
+    height: 4.4375rem;
+  }
+  .price .contPrice .contAllPrice {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .price .contPrice .contAllPrice .contAllPriceHr {
+    position: relative;
+  }
+  .price .contPrice .contAllPrice .contAllPriceHr .allPriceText {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5625rem;
+    line-height: 2.0625rem;
+  }
+  .price .contPrice .contAllPrice .contAllPriceHr .allPriceHr {
+    bottom: 0rem;
+    position: absolute;
+    width: 9rem;
+    height: 0.0625rem;
+    left: -0.5rem;
+    background-color: rgb(51, 51, 51);
+  }
+}
+@media (max-width: 470px) {
+  .price {
+    padding-top: 19px;
+    padding-bottom: 31px;
+  }
+  .price .contPrice {
+    gap: 20px;
+  }
+  .price .contPrice .contPriceTitle {
+    gap: 4px;
+  }
+  .price .contPrice .contPriceTitle .priceTitleTextH2 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5188rem;
+  }
+  .price .contPrice .contPriceTitle .priceTitleTextH3 {
+    max-width: 250px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.2188rem;
+  }
+  .price .contPrice .contList .contItem {
+    gap: 24px;
+  }
+  .price .contPrice .contList .contItem .titleItem {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+  }
+  .price .contPrice .contList .contItem .contDescriptionItem {
+    gap: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  .price .contPrice .contList .contBuy {
+    gap: 50px;
+    margin-top: 20px;
+  }
+  .price .contPrice .contList .contBuy .itemPrice {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.875rem;
+    line-height: 2.2813rem;
+  }
+  .price .contPrice .contList .contBuy .buttonBuy {
+    max-width: 292px;
+    height: 60px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .price .contPrice .contAllPrice .contAllPriceHr .allPriceText {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  .price .contPrice .contAllPrice .contAllPriceHr .allPriceHr {
+    width: 80px;
+    left: 0px;
   }
 }

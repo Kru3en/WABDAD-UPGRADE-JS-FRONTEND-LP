@@ -3,13 +3,14 @@
     padding-top: 6.25rem;
     gap: 3.25rem;
     padding-bottom: 12.8125rem;
+    max-width: 37.4375rem;
     .titleQuestions {
     }
     .contQuestions {
       .questList {
         max-width: 32.9rem;
         justify-content: start;
-        
+
         .questItem {
           gap: 1.25rem;
           .contNumber {
@@ -24,7 +25,7 @@
             .questTitle {
               max-width: 28.75rem;
               @include fonts50024px30px;
-              .questTitleNone{
+              .questTitleNone {
                 display: none;
               }
             }

@@ -7,25 +7,59 @@
 @mixin fonts60018px22px {
   font-weight: 600;
   font-style: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
 }
 @mixin fonts60020px24px {
   font-weight: 600;
   font-style: normal;
-  font-size: 20px;
-  line-height: 24.3px;
+  font-size: 1.25rem;
+  line-height: 1.5188rem;
 }
 @mixin fonts30050px61px {
   font-weight: 300;
   font-style: normal;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 3.125rem;
+  line-height: 3.8125rem;
 }
 
 @mixin fonts50016px21px {
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+}
+@mixin fonts50020px24px {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+@mixin fonts60016px19-5px {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.2188rem;
+}
+
+@mixin fonts50018px25px {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+}
+
+@mixin fonts40016px21px {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+}
+
+@mixin fonts60030px36-5px {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.875rem;
+  line-height: 2.2813rem;
 }
