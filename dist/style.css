@@ -1,0 +1,543 @@
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/style.scss ***!
+  \**********************************************************************************************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+button,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+button {
+  border: none;
+}
+
+a,
+h1,
+p,
+h2,
+h3,
+h4,
+button,
+li,
+input {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(254, 209, 0);
+  padding-top: 2.5rem;
+}
+body .header .navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 82rem;
+  width: 100%;
+}
+body .header .navContainer .contLogo .logoText {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.875rem;
+  line-height: 2.2813rem;
+}
+body .header .navContainer .navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+body .header .navContainer .navList .navLink {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+body .header .navContainer .navTel {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  position: relative;
+}
+body .header .navContainer .navTel .hrTel {
+  border-bottom: 1px solid rgb(51, 51, 51);
+  position: absolute;
+  width: 105%;
+  left: -2.5%;
+  bottom: 14%;
+}
+body .header .navContainer .burger-icon {
+  display: none;
+}
+body .header .headerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 82rem;
+  width: 100%;
+  padding-right: 2.1875rem;
+}
+body .header .headerInfo .contHeaderLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 30rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderText .bigTextHeader {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.375rem;
+  line-height: 4.5625rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderText .textBelarusASNG {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.875rem;
+  line-height: 2.2813rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .courierImgMobile {
+  display: none;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton {
+  position: relative;
+  z-index: 10;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButton {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  background-color: rgb(255, 53, 43);
+  color: rgb(242, 242, 242);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  max-width: 19rem;
+  width: 100%;
+  height: 3.75rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButtonWhiteRect {
+  z-index: 5;
+  top: 0.625rem;
+  left: 0.625rem;
+  position: absolute;
+  border: 0.125rem solid rgb(242, 242, 242);
+  max-width: 19rem;
+  width: 100%;
+  height: 3.75rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderIconInfo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 34.375rem;
+  width: 100%;
+  gap: 1rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderIconInfo .contIconText {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderIconInfo .contIconText .iconText {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  max-width: 5.625rem;
+}
+body .header .headerInfo .contHeaderLeft .contHeaderIconInfo .contIconText .iconText:last-child {
+  max-width: 8.5rem;
+}
+body .header .headerInfo .contCourierImg {
+  max-height: 35.625rem;
+  max-width: 34.5625rem;
+}
+body .header .headerInfo .contCourierImg .courierImg {
+  width: 34.5625rem;
+  height: 35.625rem;
+}
+
+@media (max-width: 1350px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1210px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1065px) {
+  html {
+    font-size: 10px;
+  }
+  body .header .headerInfo {
+    gap: 2.5rem;
+  }
+  body .header .headerInfo .contCourierImg .courierImg {
+    height: 100%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+}
+a,
+h1,
+p,
+h2,
+h3,
+h4,
+button,
+li,
+input {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  body .header {
+    padding-top: 1.3125rem;
+    padding-left: 1.75rem;
+    padding-right: 2.0625rem;
+    padding-bottom: 3rem;
+  }
+  body .header .navContainer .contLogo .logoText {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  body .header .navContainer .navList {
+    display: none;
+  }
+  body .header .navContainer .navTel {
+    display: none;
+  }
+  body .header .navContainer .burger-icon {
+    width: 2.875rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    position: relative;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  body .header .navContainer .burger-icon span,
+  body .header .navContainer .burger-icon span:after,
+  body .header .navContainer .burger-icon span::before {
+    transition-duration: 0.35s;
+    content: "";
+    width: 2.875rem;
+    height: 0.125rem;
+    position: absolute;
+    border-radius: 0;
+    cursor: pointer;
+    background: transparent;
+  }
+  body .header .navContainer .burger-icon span:after {
+    top: 0.875rem;
+    background: rgb(23, 25, 28);
+    height: 0.15rem;
+    opacity: 1;
+  }
+  body .header .navContainer .burger-icon span::before {
+    opacity: 1;
+    bottom: 0.875rem;
+    background: rgb(23, 25, 28);
+  }
+  body .header .navContainer .burger-icon span {
+    background: rgb(23, 25, 28);
+  }
+  body .header .headerInfo {
+    padding-top: 3rem;
+    padding-right: 0rem;
+    gap: 0rem;
+  }
+  body .header .headerInfo .contHeaderLeft {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.25rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderText {
+    text-align: center;
+    gap: 0.25rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderText .bigTextHeader {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.5rem;
+    line-height: 3.6875rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderText .textBelarusASNG {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 23.0625rem;
+    gap: 0rem;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .courierImgMobile {
+    display: flex;
+    width: 23.0625rem;
+    height: 33.5625rem;
+    margin-left: 2.1875rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton {
+    max-width: 23.9375rem;
+    max-height: 4.75rem;
+    width: 100%;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButton {
+    max-width: 23.9375rem;
+    max-height: 4.75rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButtonWhiteRect {
+    max-width: 23.9375rem;
+    max-height: 4.75rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderIconInfo {
+    max-width: 34.4375rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderIconInfo .contIconText .iconText {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  body .header .headerInfo .contCourierImg {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 470px) {
+  html {
+    font-size: 16px;
+  }
+  body .header {
+    padding-top: 27px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 40px;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderIconInfo {
+    display: none;
+  }
+  body .header .navContainer .contLogo .logoText {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+  body .header .navContainer .burger-icon {
+    width: 32px;
+    height: 19px;
+  }
+  body .header .navContainer .burger-icon span,
+  body .header .navContainer .burger-icon span:after,
+  body .header .navContainer .burger-icon span::before {
+    width: 32px;
+    height: 2px;
+  }
+  body .header .navContainer .burger-icon span::before {
+    opacity: 10;
+    bottom: 10px;
+  }
+  body .header .navContainer .burger-icon span:after {
+    top: 9px;
+    background: rgb(23, 25, 28);
+    opacity: 1;
+  }
+  body .header .headerInfo {
+    padding-top: 16px;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderText .bigTextHeader {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;
+    line-height: 2.3125rem;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderText .textBelarusASNG {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg {
+    margin-bottom: 0px;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .courierImgMobile {
+    margin-left: 32px;
+    max-width: 248px;
+    max-height: 360px;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton {
+    max-width: 292px;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButton {
+    max-width: 292px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24.3px;
+  }
+  body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButtonWhiteRect {
+    display: none;
+  }
+}
+a,
+h1,
+p,
+h2,
+h3,
+h4,
+button,
+li,
+input {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}

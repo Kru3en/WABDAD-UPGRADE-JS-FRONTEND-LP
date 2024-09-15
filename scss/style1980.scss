@@ -1,0 +1,161 @@
+@import 'other';
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $colloryellow;
+    padding-top: 2.5rem;
+    .navContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 82rem;
+      width: 100%;
+      .contLogo {
+        .logoText {
+          @include fonts60030px36-5px;
+        }
+      }
+      .navList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.125rem;
+        .navLink {
+          @include fonts50018px22px;
+        }
+      }
+      .navTel {
+        @include fonts60024px30px;
+        position: relative;
+        .hrTel {
+          border-bottom: 1px solid rgba(51, 51, 51, 1);
+          position: absolute;
+          width: 105%;
+          left: -2.5%;
+          bottom: 14%;
+        }
+      }
+      .burger-icon {
+        display: none;
+      }
+    }
+    .headerInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 82rem;
+      width: 100%;
+      padding-right: 2.1875rem;
+      .contHeaderLeft {
+        display: flex;
+        flex-direction: column;
+        gap: 3.125rem;
+        .contHeaderText {
+          display: flex;
+          flex-direction: column;
+          gap: 1.75rem;
+          max-width: 30rem;
+          .bigTextHeader {
+            @include fonts70070px73px;
+          }
+          .textBelarusASNG {
+            @include fonts60030px36-5px;
+          }
+        }
+        .contHeaderButtonAImg {
+          .courierImgMobile {
+            display: none;
+          }
+          .contHeaderButton {
+            position: relative;
+            z-index: 10;
+            .headerButton {
+              position: relative;
+              z-index: 10;
+              display: grid;
+              place-items: center;
+              background-color: rgba(255, 53, 43, 1);
+              color: rgba(242, 242, 242, 1);
+              @include fonts60024px30px;
+              max-width: 19rem;
+              width: 100%;
+              height: 3.75rem;
+            }
+            .headerButtonWhiteRect {
+              z-index: 5;
+              top: 0.625rem;
+              left: 0.625rem;
+              position: absolute;
+              border: 0.125rem solid rgba(242, 242, 242, 1);
+              max-width: 19rem;
+              width: 100%;
+              height: 3.75rem;
+            }
+          }
+        }
+        .contHeaderIconInfo {
+          display: flex;
+          justify-content: space-between;
+          max-width: 34.375rem;
+          width: 100%;
+          gap: 1rem;
+          .contIconText {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            .iconHeader {
+            }
+            .iconText {
+              @include fonts40016px21px;
+              max-width: 5.625rem;
+            }
+            .iconText:last-child {
+              max-width: 8.5rem;
+            }
+          }
+        }
+      }
+      .contCourierImg {
+        max-height: 35.625rem;
+        max-width: 34.5625rem;
+        .courierImg {
+          width: 34.5625rem;
+          height: 35.625rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1350px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1210px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1065px) {
+  html {
+    font-size: 10px;
+  }
+  body .header .headerInfo {
+    gap: 2.5rem;
+    .contCourierImg .courierImg {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+}
