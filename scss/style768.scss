@@ -1,0 +1,136 @@
+@import 'other';
+@import 'other768';
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    .header {
+      padding-top: 1.3125rem;
+      padding-left: 1.75rem;
+      padding-right: 2.0625rem;
+      padding-bottom: 3rem;
+      .navContainer {
+        .contLogo {
+          .logoText {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+          }
+        }
+        .navList {
+          display: none;
+        }
+        .navTel {
+          display: none;
+        }
+        .burger-icon {
+          width: 2.875rem;
+          height: 1.75rem;
+          flex-shrink: 0;
+          position: relative;
+          display: grid;
+          place-items: center;
+          cursor: pointer;
+        }
+
+        .burger-icon span,
+        .burger-icon span:after,
+        .burger-icon span::before {
+          transition-duration: 0.35s;
+          content: '';
+          width: 2.875rem;
+          height: 0.125rem;
+          position: absolute;
+          border-radius: 0;
+          cursor: pointer;
+          background: transparent;
+        }
+        .burger-icon span:after {
+          top: 0.875rem;
+          background: rgba(23, 25, 28, 1);
+          height: 0.15rem;
+          opacity: 1;
+        }
+        .burger-icon span::before {
+          opacity: 1;
+          bottom: 0.875rem;
+
+          background: rgba(23, 25, 28, 1);
+        }
+        .burger-icon span {
+          background: rgba(23, 25, 28, 1);
+        }
+      }
+      .headerInfo {
+        padding-top: 3rem;
+        padding-right: 0rem;
+        gap: 0rem;
+
+        .contHeaderLeft {
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 0.25rem;
+          .contHeaderText {
+            text-align: center;
+            gap: 0.25rem;
+            .bigTextHeader {
+              @include fonts70056px59px;
+            }
+            .textBelarusASNG {
+              @include fonts60036px44px;
+            }
+          }
+          .contHeaderButtonAImg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 23.0625rem;
+            gap: 0rem;
+            width: 100%;
+            margin-bottom: 3.125rem;
+            .courierImgMobile {
+              display: flex;
+              width: 23.0625rem;
+              height: 33.5625rem;
+              margin-left: 2.1875rem;
+            }
+            .contHeaderButton {
+              max-width: 23.9375rem;
+              max-height: 4.75rem;
+              width: 100%;
+              .headerButton {
+                max-width: 23.9375rem;
+                max-height: 4.75rem;
+              }
+              .headerButtonWhiteRect {
+                max-width: 23.9375rem;
+                max-height: 4.75rem;
+              }
+            }
+          }
+          .contHeaderIconInfo {
+            max-width: 34.4375rem;
+            .contIconText {
+              .iconText {
+                @include fonts40016px21px;
+              }
+            }
+          }
+        }
+
+        .contCourierImg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 13px;
+  }
+}
