@@ -1,7 +1,12 @@
 @import 'nullstyle';
-@import 'style1980';
-@import 'style768';
-@import 'style320';
-@import 'other';
-@import 'other768';
-@import 'other320';
+@import './other/other';
+@import './other/other768';
+@import './other/other320';
+
+@import './header/style1980';
+@import './header/style768';
+@import './header/style320';
+
+@import './questions/style1980';
+@import './questions/style768';
+@import './questions/style320';

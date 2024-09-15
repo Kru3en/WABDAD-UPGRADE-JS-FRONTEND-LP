@@ -131,6 +131,22 @@ input {
   text-decoration: none;
 }
 
+a,
+h1,
+p,
+h2,
+h3,
+h4,
+button,
+li,
+input {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -517,7 +533,7 @@ input {
   }
   body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButton {
     max-width: 292px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 20px;
     line-height: 24.3px;
@@ -526,18 +542,148 @@ input {
     display: none;
   }
 }
-a,
-h1,
-p,
-h2,
-h3,
-h4,
-button,
-li,
-input {
-  font-family: "Montserrat", system-ui;
-  font-optical-sizing: auto;
+.questions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 6.375rem;
+  gap: 3.75rem;
+}
+.questions .titleQuestions {
+  text-align: center;
+  font-weight: 600;
   font-style: normal;
-  color: rgb(51, 51, 51);
-  text-decoration: none;
+  font-size: 1.875rem;
+  line-height: 2.2813rem;
+}
+.questions .contQuestions {
+  max-width: 72.9375rem;
+  width: 100%;
+}
+.questions .contQuestions .questList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.questions .contQuestions .questList .questItem {
+  display: flex;
+  gap: 2.375rem;
+}
+.questions .contQuestions .questList .questItem .contNumber .questNumber {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 61px;
+  text-shadow: 0.125rem 0 0 rgb(254, 209, 0);
+}
+.questions .contQuestions .questList .questItem .contText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 25rem;
+}
+.questions .contQuestions .questList .questItem .contText .questTitle {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.questions .contQuestions .questList .questItem .contText .questDiscriptions {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+}
+.questions .contQuestions .questList .questItem .arrowTitle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .questions {
+    padding-top: 6.25rem;
+    gap: 3.25rem;
+    padding-bottom: 12.8125rem;
+  }
+  .questions .contQuestions .questList {
+    max-width: 32.9rem;
+    justify-content: start;
+  }
+  .questions .contQuestions .questList .questItem {
+    gap: 1.25rem;
+  }
+  .questions .contQuestions .questList .questItem .contNumber {
+    font-size: 5.625rem;
+    font-weight: 300;
+    line-height: 6.875rem;
+  }
+  .questions .contQuestions .questList .questItem .contText {
+    max-width: 28.75rem;
+  }
+  .questions .contQuestions .questList .questItem .contText .questTitle {
+    max-width: 28.75rem;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .questions .contQuestions .questList .questItem .contText .questTitle .questTitleNone {
+    display: none;
+  }
+  .questions .contQuestions .questList .questItem .contText .questDiscriptions {
+    max-width: 26.25rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  .questions .contQuestions .questList .questItem .arrowTitle {
+    display: none;
+  }
+}
+@media (max-width: 470px) {
+  .questions {
+    padding-top: 65px;
+    padding-left: 17px;
+    padding-right: 22.25px;
+    padding-bottom: 79px;
+    gap: 28px;
+  }
+  .questions .titleQuestions {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24.3px;
+  }
+  .questions .contQuestions .questList .questItem {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .questions .contQuestions .questList .questItem .contNumber .questNumber {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 61px;
+  }
+  .questions .contQuestions .questList .questItem .contText {
+    flex-direction: row;
+    width: 100%;
+  }
+  .questions .contQuestions .questList .questItem .contText .questTitle {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .questions .contQuestions .questList .questItem .contText .questDiscriptions {
+    display: none;
+  }
+  .questions .contQuestions .questList .questItem .arrowTitle {
+    display: inline;
+    width: 20px;
+    height: 11px;
+  }
 }
