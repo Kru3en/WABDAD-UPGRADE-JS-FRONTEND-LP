@@ -1,0 +1,41 @@
+@media (max-width: 470px) {
+  .questions {
+    padding-top: 65px;
+    padding-left: 17px;
+    padding-right: 22.25px;
+    padding-bottom: 79px;
+    gap: 28px;
+    .titleQuestions {
+      @include fonts60020px24px;
+    }
+    .contQuestions {
+      .questList {
+        .questItem {
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          .contNumber {
+            .questNumber {
+              @include fonts30050px61px;
+            }
+          }
+          .contText {
+            flex-direction: row;
+            width: 100%;
+            .questTitle {
+              @include fonts50016px21px;
+            }
+            .questDiscriptions {
+              display: none;
+            }
+          }
+          .arrowTitle {
+            display: inline;
+           width: 20px;
+           height: 11px;
+          }
+        }
+      }
+    }
+  }
+}
