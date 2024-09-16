@@ -1,0 +1,75 @@
+@import '../other/other320';
+@media (max-width: 470px) {
+  html {
+    font-size: 16px;
+  }
+  body .header {
+    padding-top: 27px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 40px;
+    .headerInfo .contHeaderLeft .contHeaderIconInfo {
+      display: none;
+    }
+    .navContainer {
+      .contLogo {
+        .logoText {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19.5px;
+        }
+      }
+      .burger-icon {
+        width: 32px;
+        height: 19px;
+      }
+      
+      .burger-icon span,
+      .burger-icon span:after,
+      .burger-icon span::before {
+        width: 32px;
+        height: 2px;
+      }
+      .burger-icon span::before {
+        opacity: 10;
+        bottom: 10px;
+      }
+      .burger-icon span:after {
+        top: 9px;
+        background: rgba(23, 25, 28, 1);
+        opacity: 1;
+      }
+    }
+    .headerInfo {
+      padding-top: 16px;
+      .contHeaderLeft {
+        .contHeaderText {
+          .bigTextHeader {
+            @include fonts70028px37px;
+          }
+          .textBelarusASNG {
+            @include fonts60018px22px;
+          }
+        }
+        .contHeaderButtonAImg {
+          margin-bottom: 0px;
+          .courierImgMobile {
+            margin-left: 32px;
+            max-width: 248px;
+            max-height: 360px;
+          }
+          .contHeaderButton {
+            max-width: 292px;
+            .headerButton {
+              max-width: 292px;
+              @include fonts60020px24px;
+            }
+            .headerButtonWhiteRect {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

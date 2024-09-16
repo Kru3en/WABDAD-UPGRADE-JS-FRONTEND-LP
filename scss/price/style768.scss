@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+  .price {
+    background-color: rgba(248, 251, 255, 1);
+    padding-top: 3.75rem;
+
+    width: 100%;
+    padding-bottom: 8.0625rem;
+    .contPrice {
+      justify-content: center;
+      gap: 2.8125rem;
+      .contPriceTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        .priceTitleTextH2 {
+          @include fonts60030px36-5px;
+        }
+        .priceTitleTextH3 {
+          @include fonts60024px30px;
+          max-width: 34.375rem;
+          width: 100%;
+        }
+      }
+      .contList {
+        .contItem {
+          height: 100%;
+          display: none;
+          padding: 0rem;
+          border: none;
+          gap: 1.9375rem;
+          .titleItem {
+            @include fonts50024px30px;
+          }
+          .contDescriptionItem {
+            gap: 1.5rem;
+            @include fonts40018px23-65px;
+            .descrtiption1 {
+            }
+            .descrtiption2 {
+            }
+            .descrtiption3 {
+            }
+          }
+        }
+        .contItem:nth-child(2) {
+          display: flex;
+          border: none;
+        }
+        .contBuy {
+          margin-top: 1.0625rem;
+          gap: 1rem;
+          padding: 0rem;
+          .itemPrice {
+            @include fonts60030px36-5px;
+          }
+          .buttonBuy {
+            @include fonts50028px34px;
+            max-width: 22.375rem;
+            height: 4.4375rem;
+          }
+        }
+      }
+      .contAllPrice {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .contAllPriceHr {
+          position: relative;
+          .allPriceText {
+            width: 100%;
+            text-align: center;
+            @include fonts50025px33px;
+          }
+          .allPriceHr {
+            bottom: 0rem;
+            position: absolute;
+            width: 9rem;
+            height: 0.0625rem;
+            left: -0.5rem;
+            background-color: rgba(51, 51, 51, 1);
+          }
+        }
+      }
+    }
+  }
+}

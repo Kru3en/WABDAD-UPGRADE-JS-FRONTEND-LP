@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+  .questions {
+    padding-top: 6.25rem;
+    gap: 3.25rem;
+    padding-bottom: 12.8125rem;
+    max-width: 37.4375rem;
+    .titleQuestions {
+    }
+    .contQuestions {
+      .questList {
+        max-width: 32.9rem;
+        justify-content: start;
+
+        .questItem {
+          gap: 1.25rem;
+          .contNumber {
+            font-size: 5.625rem;
+            font-weight: 300;
+            line-height: 6.875rem;
+            .questNumber {
+            }
+          }
+          .contText {
+            max-width: 28.75rem;
+            .questTitle {
+              max-width: 28.75rem;
+              @include fonts50024px30px;
+              .questTitleNone {
+                display: none;
+              }
+            }
+            .questDiscriptions {
+              max-width: 26.25rem;
+              @include fonts40016px21px;
+            }
+          }
+          .arrowTitle {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

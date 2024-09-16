@@ -1,0 +1,64 @@
+@media (max-width: 470px) {
+  .price {
+    padding-top: 19px;
+    padding-bottom: 31px;
+    .contPrice {
+      gap: 20px;
+      .contPriceTitle {
+        gap: 4px;
+
+        .priceTitleTextH2 {
+          @include fonts60020px24px;
+        }
+        .priceTitleTextH3 {
+          max-width: 250px;
+          @include fonts60016px19-5px;
+        }
+      }
+      .contList {
+        .contItem {
+          gap: 24px;
+          .titleItem {
+            @include fonts50018px25px;
+          }
+          .contDescriptionItem {
+            gap: 16px;
+            @include fonts40016px21px;
+            .descrtiption1 {
+            }
+            .descrtiption2 {
+            }
+            .descrtiption3 {
+            }
+          }
+        }
+
+        .contItem:nth-child(2) {
+        }
+        .contBuy {
+          gap: 50px;
+          margin-top: 20px;
+          .itemPrice {
+            @include fonts60030px36-5px;
+          }
+          .buttonBuy {
+            max-width: 292px;
+            height: 60px;
+            @include fonts50020px24px;
+          }
+        }
+      }
+      .contAllPrice {
+        .contAllPriceHr {
+          .allPriceText {
+            @include fonts50016px21px;
+          }
+          .allPriceHr {
+            width: 80px;
+            left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
