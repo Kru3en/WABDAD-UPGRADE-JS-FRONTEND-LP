@@ -700,13 +700,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1335px;
+  padding: 0px 15px;
+  width: 100%;
 }
 .price .contPrice {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 3.75rem;
-  max-width: 81.5625rem;
+  max-width: 1305px;
   width: 100%;
 }
 .price .contPrice .contPriceTitle {
@@ -732,12 +735,14 @@ main {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  max-width: 1305px;
+  width: 100%;
 }
 .price .contPrice .contList .contItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 26.3125rem;
+  max-width: 421px;
   height: 36.1875rem;
   width: 100%;
   padding-top: 5.25rem;
