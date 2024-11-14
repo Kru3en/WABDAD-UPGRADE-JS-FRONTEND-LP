@@ -22,7 +22,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
+      gap: 1rem;
       text-align: center;
       .priceTitleTextH2 {
         @include fonts60030px36-5px;
@@ -35,13 +35,13 @@ main {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
-      max-width: 1305px;
+      max-width: 81.5625rem;
       width: 100%;
       .contItem {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 421px;
+        max-width: 26.3125rem;
         height: 36.1875rem;
         width: 100%;
         padding-top: 5.25rem;

@@ -700,8 +700,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1335px;
-  padding: 0px 15px;
+  max-width: 83.4375rem;
+  padding: 0rem 0.9375rem;
   width: 100%;
 }
 .price .contPrice {
@@ -709,14 +709,14 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 3.75rem;
-  max-width: 1305px;
+  max-width: 81.5625rem;
   width: 100%;
 }
 .price .contPrice .contPriceTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
   text-align: center;
 }
 .price .contPrice .contPriceTitle .priceTitleTextH2 {
@@ -735,14 +735,14 @@ main {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  max-width: 1305px;
+  max-width: 81.5625rem;
   width: 100%;
 }
 .price .contPrice .contList .contItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 421px;
+  max-width: 26.3125rem;
   height: 36.1875rem;
   width: 100%;
   padding-top: 5.25rem;
@@ -879,6 +879,7 @@ main {
     width: 100%;
   }
   .price .contPrice .contAllPrice .contAllPriceHr {
+    width: auto;
     position: relative;
   }
   .price .contPrice .contAllPrice .contAllPriceHr .allPriceText {
@@ -892,9 +893,8 @@ main {
   .price .contPrice .contAllPrice .contAllPriceHr .allPriceHr {
     bottom: 0rem;
     position: absolute;
-    width: 9rem;
+    width: 100%;
     height: 0.0625rem;
-    left: -0.5rem;
     background-color: rgb(51, 51, 51);
   }
 }
@@ -963,7 +963,430 @@ main {
     line-height: 1.3125rem;
   }
   .price .contPrice .contAllPrice .contAllPriceHr .allPriceHr {
-    width: 80px;
+    width: 100%;
     left: 0px;
+  }
+}
+.autopark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.375rem;
+  width: 100%;
+}
+.autopark .contAutopark {
+  width: 81.5625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.autopark .contAutopark .contTitleText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.autopark .contAutopark .contTitleText .priceTitleTextH2 {
+  font: 600 1.875rem "Montserrat", sans-serif;
+  color: #333;
+}
+.autopark .contAutopark .contTitleText .priceTitleTextH3 {
+  font: 600 1.875rem "Montserrat", sans-serif;
+  color: #333;
+}
+.autopark .contAutopark .contSlider {
+  width: 100%;
+  margin-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+}
+.autopark .contAutopark .contSlider .contButtonSlider {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 2.875rem;
+}
+.autopark .contAutopark .contSlider .contButtonSlider .buttonSlider {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: black;
+  display: grid;
+  place-items: center;
+  border: 0.0625rem solid #333333;
+  width: 12.5625rem;
+  height: 3.125rem;
+}
+.autopark .contAutopark .contSlider .contButtonSlider .buttonSlider .mobHrActive {
+  display: none;
+}
+.autopark .contAutopark .contSlider .contButtonSlider .buttonSlider.active {
+  border: 0.0625rem solid #fed100;
+}
+.autopark .contAutopark .contSlider .contSliderContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.autopark .contAutopark .contSlider .contSliderContent .sliderArrow {
+  width: 0.4219rem;
+  height: 0.9844rem;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem {
+  display: flex;
+  align-items: center;
+  gap: 6.875rem;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875rem;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .descrtiptionTitle {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .descrtiptionTitle .descrtiptionTitleMob {
+  display: none;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contSliderDescriptionList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contSliderDescriptionList .contSliderDescriptionItem {
+  display: flex;
+  gap: 1rem;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .dots {
+  display: none;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contButtonBuy {
+  background-color: #fed100;
+  height: 3.125rem;
+  width: 15.625rem;
+  display: grid;
+  place-items: center;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contButtonBuy .buttonBuyAvto {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem .imgBig {
+  width: 40.0625rem;
+  height: 28.3125rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .autopark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.25rem;
+    width: 100%;
+  }
+  .autopark .contAutopark {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .autopark .contAutopark .contTitleText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .autopark .contAutopark .contTitleText .priceTitleTextH2 {
+    font: 600 1.875rem "Montserrat", sans-serif;
+    color: #333;
+    color: #333;
+  }
+  .autopark .contAutopark .contTitleText .priceTitleTextH3 {
+    font: 600 1.5rem "Montserrat", sans-serif;
+    color: #333;
+  }
+  .autopark .contAutopark .contSlider {
+    width: 100%;
+    margin-top: 2.875rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider {
+    display: flex;
+    justify-content: center;
+    gap: 3.9375rem;
+    margin-bottom: 5.125rem;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider {
+    font: 400 1.5rem "Montserrat", sans-serif;
+    color: #333;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider .mobHrActive {
+    display: flex;
+    border: 0.0625rem solid #fed100;
+    width: 100%;
+    height: 0rem;
+    opacity: 0;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider .mobHrActive.active {
+    opacity: 1;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider.active {
+    font: 500 1.5rem "Montserrat", sans-serif;
+    color: #333;
+    border: none;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5.625rem;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .sliderArrow {
+    display: none;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .descrtiptionTitle {
+    font: 400 1.25rem "Montserrat", sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .descrtiptionTitle .descrtiptionTitleMob {
+    font: 400 1.25rem "Montserrat", sans-serif;
+    color: #333;
+    display: inline;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contSliderDescriptionList {
+    display: none;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .dots {
+    position: relative;
+    width: 100%;
+    height: 1.5625rem;
+    display: flex;
+    gap: 1.3125rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .dots .dotsItem {
+    background-color: #333333;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .dots .dotsItem.big {
+    width: 1.1563rem;
+    height: 1.1563rem;
+    border: 0.25rem solid #ffffff;
+    background-color: #333333;
+    box-shadow: 0rem 0rem 0rem 0.125rem #fed100;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contButtonBuy {
+    background-color: #fed100;
+    width: 22.625rem;
+    height: 4.625rem;
+    display: grid;
+    place-items: center;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contButtonBuy .buttonBuyAvto {
+    font: 500 1.5rem "Montserrat", sans-serif;
+    color: #333;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .imgBig {
+    width: 32.375rem;
+    height: 22.875rem;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 580px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 510px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 440px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 410px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 328px) {
+  html {
+    font-size: 16px;
+  }
+  .autopark {
+    margin-top: 1.875rem;
+    width: 100%;
+  }
+  .autopark .contAutopark {
+    max-width: 20rem;
+  }
+  .autopark .contAutopark .contTitleText {
+    gap: 0.25rem;
+  }
+  .autopark .contAutopark .contTitleText .priceTitleTextH2 {
+    font: 600 1.25rem "Montserrat", sans-serif;
+    color: #333;
+  }
+  .autopark .contAutopark .contTitleText .priceTitleTextH3 {
+    font: 600 1rem/1.169 "Montserrat", sans-serif;
+    text-align: center;
+    color: #333;
+  }
+  .autopark .contAutopark .contSlider {
+    width: 100%;
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider {
+    display: flex;
+    justify-content: center;
+    gap: 2.1875rem;
+    margin-bottom: 2.75rem;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider {
+    font: 400 14px "Montserrat", sans-serif;
+    color: #333;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider .mobHrActive {
+    display: flex;
+    border: 0.0625rem solid #fed100;
+    width: 100%;
+    height: 0rem;
+    opacity: 0;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider .mobHrActive.active {
+    opacity: 1;
+  }
+  .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider.active {
+    font: 500 0.875rem "Montserrat", sans-serif;
+    color: #333;
+    border: none;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .sliderArrow {
+    display: none;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .descrtiptionTitle {
+    font: 400 0.75rem "Montserrat", sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .descrtiptionTitle .descrtiptionTitleMob {
+    font: 400 0.75rem "Montserrat", sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contSliderDescriptionList {
+    display: none;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .dots {
+    position: relative;
+    width: 100%;
+    height: 1.5625rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .dots .dotsItem {
+    background-color: #333333;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .dots .dotsItem.big {
+    width: 1.1563rem;
+    height: 1.1563rem;
+    border: 0.25rem solid #ffffff;
+    background-color: #333333;
+    box-shadow: 0rem 0rem 0rem 0.125rem #fed100;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contButtonBuy {
+    background-color: #fed100;
+    width: 18.25rem;
+    height: 3.75rem;
+    display: grid;
+    place-items: center;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .contSliderDescription .contButtonBuy .buttonBuyAvto {
+    font: 500 1.25rem "Montserrat", sans-serif;
+    color: #333;
+  }
+  .autopark .contAutopark .contSlider .contSliderContent .contSliderItem .imgBig {
+    width: 20.0625rem;
+    height: 14.1875rem;
+  }
+}
+@media (max-width: 298px) {
+  html {
+    font-size: 12px;
   }
 }

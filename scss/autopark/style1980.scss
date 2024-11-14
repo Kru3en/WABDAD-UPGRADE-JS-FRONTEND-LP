@@ -1,0 +1,112 @@
+.autopark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.375rem;
+  width: 100%;
+  .contAutopark {
+    width: 81.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contTitleText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      .priceTitleTextH2 {
+        font: 600 1.875rem 'Montserrat', sans-serif;
+        color: #333;
+      }
+      .priceTitleTextH3 {
+        font: 600 1.875rem 'Montserrat', sans-serif;
+        color: #333;
+      }
+    }
+    .contSlider {
+      width: 100%;
+      margin-top: 3.75rem;
+      display: flex;
+      flex-direction: column;
+      .contButtonSlider {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-bottom: 2.875rem;
+        .buttonSlider {
+          @include fonts50020px24px;
+          color: black;
+          display: grid;
+          place-items: center;
+          border: 0.0625rem solid #333333;
+          width: 12.5625rem;
+          height: 3.125rem;
+          .mobHrActive {
+            display: none;
+          }
+          &.active {
+            border: 0.0625rem solid #fed100;
+          }
+        }
+      }
+      .contSliderContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 3rem;
+        .sliderArrow {
+          width: 0.4219rem;
+          height: 0.9844rem;
+        }
+        .contSliderItem {
+          display: flex;
+          align-items: center;
+          gap: 6.875rem;
+          .contSliderDescription {
+            display: flex;
+            flex-direction: column;
+            gap: 2.1875rem;
+            .descrtiptionTitle {
+              @include fonts60024px30px;
+              .descrtiptionTitleMob {
+                display: none;
+              }
+            }
+            .contSliderDescriptionList {
+              display: flex;
+              flex-direction: column;
+              gap: 1.75rem;
+              .contSliderDescriptionItem {
+                display: flex;
+                gap: 1rem;
+                .iconCheck {
+                }
+                .textCheck {
+                }
+              }
+            }
+            .dots {
+              display: none;
+            }
+            .contButtonBuy {
+              background-color: #fed100;
+              height: 3.125rem;
+              width: 15.625rem;
+              display: grid;
+              place-items: center;
+              .buttonBuyAvto {
+                @include fonts50020px24px;
+              }
+            }
+          }
+
+          .imgBig {
+            width: 40.0625rem;
+            height: 28.3125rem;
+          }
+        }
+      }
+    }
+  }
+}
