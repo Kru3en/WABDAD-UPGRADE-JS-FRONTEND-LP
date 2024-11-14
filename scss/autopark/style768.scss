@@ -10,7 +10,7 @@
     margin-top: 5.25rem;
     width: 100%;
     .contAutopark {
-      width: 40rem;
+      width: 35rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -23,11 +23,14 @@
         .priceTitleTextH2 {
           font: 600 1.875rem 'Montserrat', sans-serif;
           color: #333;
-          color: #333;
         }
         .priceTitleTextH3 {
           font: 600 1.5rem 'Montserrat', sans-serif;
           color: #333;
+          text-align: center;
+          width: auto;
+          word-wrap: break-word; // Перенос слов при нехватке места
+          overflow-wrap: break-word;
         }
       }
       .contSlider {
@@ -40,7 +43,7 @@
           justify-content: center;
           gap: 3.9375rem;
           margin-bottom: 5.125rem;
-
+          width: 100%;
           .buttonSlider {
             font: 400 1.5rem 'Montserrat', sans-serif;
             color: #333;
@@ -69,7 +72,7 @@
           align-items: center;
           justify-content: space-between;
           width: 100%;
-                  margin-bottom: 5.625rem;
+          margin-bottom: 5.625rem;
           .sliderArrow {
             display: none;
           }
@@ -158,15 +161,15 @@
     font-size: 13px;
   }
 }
-@media (max-width: 510px) {
+@media (max-width: 550px) {
   html {
     font-size: 11px;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   html {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 

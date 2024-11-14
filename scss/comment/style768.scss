@@ -1,0 +1,144 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .comment {
+    width: 100%;
+    padding-top: 3.25rem;
+    padding-bottom: 2.875rem;
+    background-color: #fed100;
+    display: flex;
+    justify-content: center;
+    .contComment {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0rem;
+      overflow: hidden;
+      .textCommentH2 {
+        font: 600 1.875rem 'Montserrat', sans-serif;
+        color: #333;
+        margin-bottom: 3.4375rem;
+      }
+      .listComment {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 2.25rem;
+        .itemComment {
+          width: 26.3125rem;
+          height: 16.625rem;
+          .nickName {
+            font: 600 1.5rem 'Montserrat', sans-serif;
+            color: #333;
+            margin-bottom: 0.625rem;
+          }
+          .dateAndMark {
+            display: flex;
+            gap: 0.5938rem;
+            margin-bottom: 1.25rem;
+            .listMark {
+              display: flex;
+              gap: 0.0313rem;
+              width: 0.9375rem;
+              height: 0.9375rem;
+            }
+          }
+          .textComment {
+            font: 400 1rem / 1.314 'Montserrat', sans-serif;
+            color: #333;
+          }
+          .readAllCont {
+            display: inline-flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+
+            .readAll {
+              font: 400 1rem / 1.314 'Montserrat', sans-serif;
+              color: #333;
+            }
+
+            .readAllHr {
+              border: 0.0625rem solid #333;
+              width: 100%; // Ширина под содержимое
+            }
+          }
+        }
+      }
+      .dots {
+        position: relative;
+        width: 100%;
+        height: 0.625rem;
+        display: flex;
+        gap: 1.3125rem;
+        justify-content: center;
+        align-items: center;
+        .dotsItem {
+          background-color: #333333;
+
+          width: 0.625rem;
+          height: 0.625rem;
+          border-radius: 50%;
+          transform: rotate(-90deg);
+
+          &.active {
+            width: 1.1563rem;
+            height: 1.1563rem;
+            border: 0.25rem solid #fed100;
+            background-color: #333333; // Центральная точка остается черной
+
+            box-shadow: 0rem 0rem 0rem 0.125rem #333333; // Белый отступ между границами
+          }
+        }
+      }
+      .buttonAllComment {
+        border: 0.0625rem solid #333;
+        display: grid;
+        place-items: center;
+        width: 250px;
+        height: 50px;
+        margin-top: 3.5rem;
+        p {
+          font: 500 20px 'Montserrat', sans-serif;
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 580px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 410px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 8px;
+  }
+}

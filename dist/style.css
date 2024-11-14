@@ -1096,7 +1096,7 @@ main {
     width: 100%;
   }
   .autopark .contAutopark {
-    width: 40rem;
+    width: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1110,11 +1110,14 @@ main {
   .autopark .contAutopark .contTitleText .priceTitleTextH2 {
     font: 600 1.875rem "Montserrat", sans-serif;
     color: #333;
-    color: #333;
   }
   .autopark .contAutopark .contTitleText .priceTitleTextH3 {
     font: 600 1.5rem "Montserrat", sans-serif;
     color: #333;
+    text-align: center;
+    width: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .autopark .contAutopark .contSlider {
     width: 100%;
@@ -1127,6 +1130,7 @@ main {
     justify-content: center;
     gap: 3.9375rem;
     margin-bottom: 5.125rem;
+    width: 100%;
   }
   .autopark .contAutopark .contSlider .contButtonSlider .buttonSlider {
     font: 400 1.5rem "Montserrat", sans-serif;
@@ -1234,14 +1238,14 @@ main {
     font-size: 13px;
   }
 }
-@media (max-width: 510px) {
+@media (max-width: 550px) {
   html {
     font-size: 11px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   html {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 @media (max-width: 410px) {
@@ -1388,5 +1392,288 @@ main {
 @media (max-width: 298px) {
   html {
     font-size: 12px;
+  }
+}
+.comment {
+  width: 100%;
+  padding-top: 6.125rem;
+  padding-bottom: 6rem;
+  background-color: #fed100;
+  display: flex;
+  justify-content: center;
+}
+.comment .contComment {
+  max-width: 81.5625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.75rem;
+}
+.comment .contComment .textCommentH2 {
+  font: 600 1.875rem "Montserrat", sans-serif;
+  color: #333;
+}
+.comment .contComment .listComment {
+  display: flex;
+  gap: 1.25rem;
+}
+.comment .contComment .listComment .itemComment {
+  width: 26.25rem;
+  height: 15.5rem;
+}
+.comment .contComment .listComment .itemComment .nickName {
+  font: 600 1.5rem "Montserrat", sans-serif;
+  color: #333;
+  margin-bottom: 0.625rem;
+}
+.comment .contComment .listComment .itemComment .dateAndMark {
+  display: flex;
+  gap: 0.5938rem;
+  margin-bottom: 1.25rem;
+}
+.comment .contComment .listComment .itemComment .dateAndMark .listMark {
+  display: flex;
+  gap: 0.0313rem;
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+.comment .contComment .listComment .itemComment .textComment {
+  font: 400 1rem/1.314 "Montserrat", sans-serif;
+  color: #333;
+}
+.comment .contComment .listComment .itemComment .readAllCont {
+  display: none;
+}
+.comment .contComment .buttonAllComment {
+  border: 0.0625rem solid #333;
+  display: grid;
+  place-items: center;
+  width: 15.625rem;
+  height: 3.125rem;
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #333;
+}
+.comment .contComment .buttonAllComment p {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #333;
+}
+.comment .contComment .dots {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .comment {
+    width: 100%;
+    padding-top: 3.25rem;
+    padding-bottom: 2.875rem;
+    background-color: #fed100;
+    display: flex;
+    justify-content: center;
+  }
+  .comment .contComment {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    overflow: hidden;
+  }
+  .comment .contComment .textCommentH2 {
+    font: 600 1.875rem "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 3.4375rem;
+  }
+  .comment .contComment .listComment {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2.25rem;
+  }
+  .comment .contComment .listComment .itemComment {
+    width: 26.3125rem;
+    height: 16.625rem;
+  }
+  .comment .contComment .listComment .itemComment .nickName {
+    font: 600 1.5rem "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 0.625rem;
+  }
+  .comment .contComment .listComment .itemComment .dateAndMark {
+    display: flex;
+    gap: 0.5938rem;
+    margin-bottom: 1.25rem;
+  }
+  .comment .contComment .listComment .itemComment .dateAndMark .listMark {
+    display: flex;
+    gap: 0.0313rem;
+    width: 0.9375rem;
+    height: 0.9375rem;
+  }
+  .comment .contComment .listComment .itemComment .textComment {
+    font: 400 1rem/1.314 "Montserrat", sans-serif;
+    color: #333;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont .readAll {
+    font: 400 1rem/1.314 "Montserrat", sans-serif;
+    color: #333;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont .readAllHr {
+    border: 0.0625rem solid #333;
+    width: 100%;
+  }
+  .comment .contComment .dots {
+    position: relative;
+    width: 100%;
+    height: 0.625rem;
+    display: flex;
+    gap: 1.3125rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .comment .contComment .dots .dotsItem {
+    background-color: #333333;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+  .comment .contComment .dots .dotsItem.active {
+    width: 1.1563rem;
+    height: 1.1563rem;
+    border: 0.25rem solid #fed100;
+    background-color: #333333;
+    box-shadow: 0rem 0rem 0rem 0.125rem #333333;
+  }
+  .comment .contComment .buttonAllComment {
+    border: 0.0625rem solid #333;
+    display: grid;
+    place-items: center;
+    width: 250px;
+    height: 50px;
+    margin-top: 3.5rem;
+  }
+  .comment .contComment .buttonAllComment p {
+    font: 500 20px "Montserrat", sans-serif;
+    color: #333;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 580px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 460px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 410px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 440px) {
+  .comment {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-color: #fed100;
+    display: flex;
+    justify-content: center;
+  }
+  .comment .contComment {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    overflow: hidden;
+  }
+  .comment .contComment .textCommentH2 {
+    font: 600 20px "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  .comment .contComment .listComment {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 48px;
+  }
+  .comment .contComment .listComment .itemComment {
+    width: 303px;
+    height: 224px;
+  }
+  .comment .contComment .listComment .itemComment .nickName {
+    font: 500 18px "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .comment .contComment .listComment .itemComment .dateAndMark {
+    display: flex;
+    gap: 9.5008px;
+    margin-bottom: 20px;
+  }
+  .comment .contComment .listComment .itemComment .dateAndMark .listMark {
+    display: flex;
+    gap: 0.5008px;
+    width: 15px;
+    height: 15px;
+  }
+  .comment .contComment .listComment .itemComment .textComment {
+    font: 400 16px/1.314 "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 14px;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont .readAll {
+    font: 500 16px/1.314 "Montserrat", sans-serif;
+    color: #333;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont .readAllHr {
+    border: 0.0625rem solid #333;
+    width: 100%;
+  }
+  .comment .contComment .dots {
+    display: none;
+  }
+  .comment .contComment .buttonAllComment {
+    display: grid;
+    place-items: center;
+    border: 1px solid #333;
+    width: 292px;
+    height: 60px;
+    margin-top: 3.5rem;
+  }
+  .comment .contComment .buttonAllComment p {
+    font: 500 20px "Montserrat", sans-serif;
+    color: #333;
   }
 }

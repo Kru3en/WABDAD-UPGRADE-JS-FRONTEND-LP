@@ -1,0 +1,67 @@
+.comment {
+  width: 100%;
+  padding-top: 6.125rem;
+  padding-bottom: 6rem;
+  background-color: #fed100;
+  display: flex;
+  justify-content: center;
+  .contComment {
+    max-width: 81.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.75rem;
+
+    .textCommentH2 {
+      font: 600 1.875rem 'Montserrat', sans-serif;
+      color: #333;
+    }
+    .listComment {
+      display: flex;
+      gap: 1.25rem;
+      .itemComment {
+        width: 26.25rem;
+        height: 15.5rem;
+        .nickName {
+          font: 600 1.5rem 'Montserrat', sans-serif;
+          color: #333;
+          margin-bottom: 0.625rem;
+        }
+        .dateAndMark {
+          display: flex;
+          gap: 0.5938rem;
+          margin-bottom: 1.25rem;
+          .listMark {
+            display: flex;
+            gap: 0.0313rem;
+            width: 0.9375rem;
+            height: 0.9375rem;
+          }
+        }
+        .textComment {
+          font: 400 1rem / 1.314 'Montserrat', sans-serif;
+          color: #333;
+        }
+        .readAllCont {
+          display: none;
+        }
+      }
+    }
+    .buttonAllComment {
+      border: 0.0625rem solid #333;
+      display: grid;
+      place-items: center;
+      width: 15.625rem;
+      height: 3.125rem;
+      font: 500 1.25rem 'Montserrat', sans-serif;
+      color: #333;
+      p {
+        font: 500 1.25rem 'Montserrat', sans-serif;
+        color: #333;
+      }
+    }
+    .dots {
+      display: none;
+    }
+  }
+}

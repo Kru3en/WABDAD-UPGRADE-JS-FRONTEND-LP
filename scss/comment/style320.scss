@@ -1,0 +1,84 @@
+@media (max-width: 440px) {
+  .comment {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-color: #fed100;
+    display: flex;
+    justify-content: center;
+    .contComment {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0rem;
+      overflow: hidden;
+      .textCommentH2 {
+        font: 600 20px 'Montserrat', sans-serif;
+        color: #333;
+        margin-bottom: 40px;
+      }
+      .listComment {
+        display: flex;
+        gap: 1.25rem;
+        margin-bottom: 48px;
+        .itemComment {
+          width: 303px;
+          height: 224px;
+          .nickName {
+            font: 500 18px 'Montserrat', sans-serif;
+            color: #333;
+            margin-bottom: 10px;
+          }
+          .dateAndMark {
+            display: flex;
+            gap: 9.5008px;
+            margin-bottom: 20px;
+            .listMark {
+              display: flex;
+              gap: 0.5008px;
+              width: 15px;
+              height: 15px;
+            }
+          }
+          .textComment {
+            font: 400 16px / 1.314 'Montserrat', sans-serif;
+            color: #333;
+            margin-bottom: 14px;
+          }
+          .readAllCont {
+            display: inline-flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+
+            .readAll {
+              font: 500 16px / 1.314 'Montserrat', sans-serif;
+              color: #333;
+            }
+
+            .readAllHr {
+              border: 0.0625rem solid #333;
+              width: 100%; // Ширина под содержимое
+            }
+          }
+        }
+      }
+      .dots {
+        display: none;
+      }
+      .buttonAllComment {
+        display: grid;
+        place-items: center;
+        border: 1px solid #333;
+        width: 292px;
+        height: 60px;
+        margin-top: 3.5rem;
+        p {
+          font: 500 20px 'Montserrat', sans-serif;
+          color: #333;
+        }
+      }
+    }
+  }
+}
