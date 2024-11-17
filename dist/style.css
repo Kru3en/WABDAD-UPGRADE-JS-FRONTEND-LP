@@ -1431,6 +1431,11 @@ main {
 .form .contForm .formInput .contOptioanalService .contOptioanal .contTextOptional .optionalArrow {
   width: 1.0625rem;
   height: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contTextOptional .optionalArrow.rotated {
+  transform: rotate(180deg);
 }
 .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList {
   display: grid;
