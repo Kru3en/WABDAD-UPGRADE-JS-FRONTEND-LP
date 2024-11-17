@@ -30,6 +30,9 @@ body {
           @include fonts50018px22px;
         }
       }
+      .navListMob {
+        display: none;
+      }
       .navTel {
         @include fonts60024px30px;
         position: relative;

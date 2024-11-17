@@ -189,6 +189,9 @@ body .header .navContainer .navList .navLink {
   font-size: 1.125rem;
   line-height: 1.375rem;
 }
+body .header .navContainer .navListMob {
+  display: none;
+}
 body .header .navContainer .navTel {
   font-weight: 600;
   font-style: normal;
@@ -362,6 +365,63 @@ span {
   body .header .navContainer .navList {
     display: none;
   }
+  body .header .navContainer .navListMob {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 296px;
+    border-radius: 32px 0px 0px 32px;
+    height: 100%;
+    background-color: white;
+    list-style: none;
+    padding-top: 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 40px;
+    align-items: start;
+    padding-left: 38px;
+    transition: right 0.3s ease;
+  }
+  body .header .navContainer .navListMob .navLink {
+    font-weight: 500;
+    font-size: 28px;
+    color: #333;
+  }
+  body .header .navContainer .navListMob .navLink .headerNumber {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+  }
+  body .header .navContainer .navListMob .navLink .headerNumberHr {
+    border: 1px solid #333;
+    width: 166px;
+    height: 0px;
+  }
+  body .header .navContainer .navListMob .navLink:nth-child(1) {
+    font-weight: 500;
+    font-size: 28px;
+    color: #fff;
+    background: #000;
+    width: 120%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 38px;
+    margin-left: -38px;
+    margin-bottom: -20px;
+  }
+  body .header .navContainer .navListMob .navLink:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  body .header .navContainer .navListMob.active {
+    right: 0;
+  }
   body .header .navContainer .navTel {
     display: none;
   }
@@ -399,6 +459,30 @@ span {
   }
   body .header .navContainer .burger-icon span {
     background: rgb(23, 25, 28);
+  }
+  body .header .navContainer .burger-icon.active span {
+    background: transparent;
+    position: fixed;
+    z-index: 100;
+  }
+  body .header .navContainer .burger-icon.active span::before,
+  body .header .navContainer .burger-icon.active span:after {
+    width: 21px;
+    height: 2.4px;
+    bottom: 14px;
+    right: -5px;
+    top: 0px;
+    z-index: 100;
+  }
+  body .header .navContainer .burger-icon.active {
+    width: 40.25px;
+    height: 24.5px;
+  }
+  body .header .navContainer .burger-icon.active span::before {
+    transform: rotate(-145deg) translate(11px, 1px);
+  }
+  body .header .navContainer .burger-icon.active span:after {
+    transform: rotate(145deg) translate(11px, 1px);
   }
   body .header .headerInfo {
     padding-top: 3rem;
@@ -546,6 +630,32 @@ span {
   }
   body .header .headerInfo .contHeaderLeft .contHeaderButtonAImg .contHeaderButton .headerButtonWhiteRect {
     display: none;
+  }
+}
+@media (max-width: 440px) {
+  body .header .navContainer .contLogo .logoText {
+    position: fixed;
+    z-index: 1000;
+  }
+  body .header .navContainer .navListMob {
+    padding-top: 117px;
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+    padding-left: 44px;
+  }
+  body .header .navContainer .navListMob .navLink:nth-child(1) {
+    height: 82px;
+    padding-left: 44px;
+    margin-left: -44px;
+  }
+  body .header .navContainer .navLink:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    padding-right: 44px;
   }
 }
 .questions {

@@ -21,6 +21,65 @@
         .navList {
           display: none;
         }
+        .navListMob {
+          z-index: 100;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 296px;
+          border-radius: 32px 0px 0px 32px;
+          height: 100%;
+          background-color: white;
+          list-style: none;
+          padding-top: 143px;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          gap: 40px;
+          align-items: start;
+          padding-left: 38px;
+          transition: right 0.3s ease;
+          .navLink {
+            font-weight: 500;
+            font-size: 28px;
+            color: #333;
+
+            .headerNumber {
+              font-weight: 600;
+              font-size: 24px;
+              color: #333;
+            }
+            .headerNumberHr {
+              border: 1px solid #333;
+              width: 166px;
+              height: 0px;
+            }
+          }
+          .navLink:nth-child(1) {
+            font-weight: 500;
+            font-size: 28px;
+            color: #fff;
+            background: #000;
+            width: 120%;
+            height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 38px;
+            margin-left: -38px;
+            margin-bottom: -20px;
+          }
+          .navLink:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+          }
+        }
+        .navListMob.active {
+          right: 0;
+        }
+
         .navTel {
           display: none;
         }
@@ -60,6 +119,35 @@
         }
         .burger-icon span {
           background: rgba(23, 25, 28, 1);
+        }
+
+        .burger-icon.active span {
+          background: transparent;
+          position: fixed;
+          z-index: 100;
+        }
+
+        .burger-icon.active span::before,
+        .burger-icon.active span:after {
+          width: 21px;
+          height: 2.4px;
+          bottom: 14px;
+          right: -5px;
+          top: 0px;
+          z-index: 100;
+        }
+
+        .burger-icon.active {
+          width: 40.25px;
+          height: 24.5px;
+        }
+
+        .burger-icon.active span::before {
+          transform: rotate(-145deg) translate(11px, 1px);
+        }
+
+        .burger-icon.active span:after {
+          transform: rotate(145deg) translate(11px, 1px);
         }
       }
       .headerInfo {

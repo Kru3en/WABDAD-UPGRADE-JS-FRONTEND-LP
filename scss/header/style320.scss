@@ -23,7 +23,7 @@
         width: 32px;
         height: 19px;
       }
-      
+
       .burger-icon span,
       .burger-icon span:after,
       .burger-icon span::before {
@@ -69,6 +69,38 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  body .header {
+    .navContainer {
+      .contLogo {
+        .logoText {
+          position: fixed;
+          z-index: 1000;
+        }
+      }
+      .navListMob {
+        padding-top: 117px;
+        border-radius: 0px;
+        height: 100%;
+        width: 100%;
+        padding-left: 44px;
+        .navLink:nth-child(1) {
+          height: 82px;
+          padding-left: 44px;
+          margin-left: -44px;
+        }
+      }
+      .navLink:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+        padding-right: 44px;
       }
     }
   }
