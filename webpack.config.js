@@ -7,12 +7,30 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    assetModuleFilename: 'assets/img/[name][hash][ext][query]', // Управление путём для ассетов
   },
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              url: true, // Убедитесь, что пути обрабатываются
+              sourceMap: true,
+            },
+          },
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/img/[name][hash][ext]',
+        },
       },
     ],
   },
@@ -21,4 +39,12 @@ module.exports = {
       filename: 'style.css',
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 9000,
+  },
+  devtool: 'source-map',
 }

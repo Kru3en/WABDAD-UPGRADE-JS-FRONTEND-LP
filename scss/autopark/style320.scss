@@ -137,8 +137,14 @@
     }
   }
 }
-@media (max-width: 298px) {
+@media (max-width: 318px) {
   html {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 295px) {
+  html {
+    font-size: 11px;
   }
 }

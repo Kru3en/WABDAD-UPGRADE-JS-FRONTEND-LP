@@ -1,6 +1,6 @@
-/*!**********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/style.scss ***!
-  \**********************************************************************************************************/
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./scss/style.scss ***!
+  \**************************************************************************************************************************************/
 *,
 *:before,
 *:after {
@@ -123,7 +123,9 @@ h3,
 h4,
 button,
 li,
-input {
+input,
+label,
+span {
   font-family: "Montserrat", system-ui;
   font-optical-sizing: auto;
   font-style: normal;
@@ -139,7 +141,9 @@ h3,
 h4,
 button,
 li,
-input {
+input,
+label,
+span {
   font-family: "Montserrat", system-ui;
   font-optical-sizing: auto;
   font-style: normal;
@@ -330,7 +334,9 @@ h3,
 h4,
 button,
 li,
-input {
+input,
+label,
+span {
   font-family: "Montserrat", system-ui;
   font-optical-sizing: auto;
   font-style: normal;
@@ -967,6 +973,1326 @@ main {
     left: 0px;
   }
 }
+.comment {
+  width: 100%;
+  padding-top: 6.125rem;
+  padding-bottom: 6rem;
+  background-color: #fed100;
+  display: flex;
+  justify-content: center;
+}
+.comment .contComment {
+  max-width: 81.5625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.75rem;
+}
+.comment .contComment .textCommentH2 {
+  font: 600 1.875rem "Montserrat", sans-serif;
+  color: #333;
+}
+.comment .contComment .listComment {
+  display: flex;
+  gap: 1.25rem;
+}
+.comment .contComment .listComment .itemComment {
+  width: 26.25rem;
+  height: 15.5rem;
+}
+.comment .contComment .listComment .itemComment .nickName {
+  font: 600 1.5rem "Montserrat", sans-serif;
+  color: #333;
+  margin-bottom: 0.625rem;
+}
+.comment .contComment .listComment .itemComment .dateAndMark {
+  display: flex;
+  gap: 0.5938rem;
+  margin-bottom: 1.25rem;
+}
+.comment .contComment .listComment .itemComment .dateAndMark .listMark {
+  display: flex;
+  gap: 0.0313rem;
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+.comment .contComment .listComment .itemComment .textComment {
+  font: 400 1rem/1.314 "Montserrat", sans-serif;
+  color: #333;
+}
+.comment .contComment .listComment .itemComment .readAllCont {
+  display: none;
+}
+.comment .contComment .buttonAllComment {
+  border: 0.0625rem solid #333;
+  display: grid;
+  place-items: center;
+  width: 15.625rem;
+  height: 3.125rem;
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #333;
+}
+.comment .contComment .buttonAllComment p {
+  font: 500 1.25rem "Montserrat", sans-serif;
+  color: #333;
+}
+.comment .contComment .dots {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .comment {
+    width: 100%;
+    padding-top: 3.25rem;
+    padding-bottom: 2.875rem;
+    background-color: #fed100;
+    display: flex;
+    justify-content: center;
+  }
+  .comment .contComment {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    overflow: hidden;
+  }
+  .comment .contComment .textCommentH2 {
+    font: 600 1.875rem "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 3.4375rem;
+  }
+  .comment .contComment .listComment {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2.25rem;
+  }
+  .comment .contComment .listComment .itemComment {
+    width: 26.3125rem;
+    height: 16.625rem;
+  }
+  .comment .contComment .listComment .itemComment .nickName {
+    font: 600 1.5rem "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 0.625rem;
+  }
+  .comment .contComment .listComment .itemComment .dateAndMark {
+    display: flex;
+    gap: 0.5938rem;
+    margin-bottom: 1.25rem;
+  }
+  .comment .contComment .listComment .itemComment .dateAndMark .listMark {
+    display: flex;
+    gap: 0.0313rem;
+    width: 0.9375rem;
+    height: 0.9375rem;
+  }
+  .comment .contComment .listComment .itemComment .textComment {
+    font: 400 1rem/1.314 "Montserrat", sans-serif;
+    color: #333;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont .readAll {
+    font: 400 1rem/1.314 "Montserrat", sans-serif;
+    color: #333;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont .readAllHr {
+    border: 0.0625rem solid #333;
+    width: 100%;
+  }
+  .comment .contComment .dots {
+    position: relative;
+    width: 100%;
+    height: 0.625rem;
+    display: flex;
+    gap: 1.3125rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .comment .contComment .dots .dotsItem {
+    background-color: #333333;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+  .comment .contComment .dots .dotsItem.active {
+    width: 1.1563rem;
+    height: 1.1563rem;
+    border: 0.25rem solid #fed100;
+    background-color: #333333;
+    box-shadow: 0rem 0rem 0rem 0.125rem #333333;
+  }
+  .comment .contComment .buttonAllComment {
+    border: 0.0625rem solid #333;
+    display: grid;
+    place-items: center;
+    width: 250px;
+    height: 50px;
+    margin-top: 3.5rem;
+  }
+  .comment .contComment .buttonAllComment p {
+    font: 500 20px "Montserrat", sans-serif;
+    color: #333;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 580px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 460px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 410px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 440px) {
+  .comment {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-color: #fed100;
+    display: flex;
+    justify-content: center;
+  }
+  .comment .contComment {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    overflow: hidden;
+  }
+  .comment .contComment .textCommentH2 {
+    font: 600 20px "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  .comment .contComment .listComment {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 48px;
+  }
+  .comment .contComment .listComment .itemComment {
+    width: 303px;
+    height: 224px;
+  }
+  .comment .contComment .listComment .itemComment .nickName {
+    font: 500 18px "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .comment .contComment .listComment .itemComment .dateAndMark {
+    display: flex;
+    gap: 9.5008px;
+    margin-bottom: 20px;
+  }
+  .comment .contComment .listComment .itemComment .dateAndMark .listMark {
+    display: flex;
+    gap: 0.5008px;
+    width: 15px;
+    height: 15px;
+  }
+  .comment .contComment .listComment .itemComment .textComment {
+    font: 400 16px/1.314 "Montserrat", sans-serif;
+    color: #333;
+    margin-bottom: 14px;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont .readAll {
+    font: 500 16px/1.314 "Montserrat", sans-serif;
+    color: #333;
+  }
+  .comment .contComment .listComment .itemComment .readAllCont .readAllHr {
+    border: 0.0625rem solid #333;
+    width: 100%;
+  }
+  .comment .contComment .dots {
+    display: none;
+  }
+  .comment .contComment .buttonAllComment {
+    display: grid;
+    place-items: center;
+    border: 1px solid #333;
+    width: 292px;
+    height: 60px;
+    margin-top: 3.5rem;
+  }
+  .comment .contComment .buttonAllComment p {
+    font: 500 20px "Montserrat", sans-serif;
+    color: #333;
+  }
+}
+.form {
+  padding-top: 7.625rem;
+  padding-bottom: 6.5rem;
+}
+.form .contForm {
+  max-width: 45.4375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.form .contForm .formH2 {
+  font-weight: 600;
+  font-size: 1.875rem;
+  color: #333;
+  margin-bottom: 0.625rem;
+}
+.form .contForm .formH2 .formH2Desctop {
+  font-weight: 600;
+  font-size: 1.875rem;
+  color: #333;
+  margin-bottom: 0.625rem;
+}
+.form .contForm .formH3 {
+  padding-left: 0.6875rem;
+  text-align: start;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 131%;
+  color: #333;
+  margin-bottom: 3rem;
+}
+.form .contForm .formInput {
+  padding-left: 0.6875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.form .contForm .formInput .nameAndPhone {
+  display: flex;
+  gap: 4.375rem;
+}
+.form .contForm .formInput .nameAndPhone .inputName {
+  min-width: 18.75rem;
+  border: none;
+  border-bottom: 0.0625rem solid #333;
+  padding-left: 0rem;
+}
+.form .contForm .formInput .nameAndPhone .inputPhone {
+  min-width: 18.75rem;
+  border: none;
+  border-bottom: 0.0625rem solid #333;
+}
+.form .contForm .formInput .nameAndPhone .inputName::placeholder,
+.form .contForm .formInput .nameAndPhone .inputPhone::placeholder {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgba(51, 51, 51, 0.7);
+}
+.form .contForm .formInput .oblastAndSity {
+  display: flex;
+  gap: 4.375rem;
+  min-width: 18.75rem;
+}
+.form .contForm .formInput .oblastAndSity .oblast {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  min-width: 18.75rem;
+}
+.form .contForm .formInput .oblastAndSity .oblast .textOblast {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #333;
+}
+.form .contForm .formInput .oblastAndSity .oblast .oblastInput {
+  height: 2.25rem;
+  width: 100%;
+  border: none;
+  border-bottom: 0.0625rem solid #333;
+  color: rgba(51, 51, 51, 0.7);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.form .contForm .formInput .oblastAndSity .sity {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  min-width: 18.75rem;
+}
+.form .contForm .formInput .oblastAndSity .sity .textSity {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #333;
+}
+.form .contForm .formInput .oblastAndSity .sity .oblastInput {
+  height: 2.25rem;
+  width: 100%;
+  border: none;
+  border-bottom: 0.0625rem solid #333;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+.form .contForm .formInput .contPay {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.form .contForm .formInput .contPay .textPay {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #333;
+}
+.form .contForm .formInput .contPay .contRadioList {
+  display: flex;
+  gap: 2.5rem;
+}
+.form .contForm .formInput .contPay .contRadioList .cashLabel .cash {
+  display: none;
+}
+.form .contForm .formInput .contPay .contRadioList .cashLabel .text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.314;
+  color: #333;
+  padding-left: 2.5rem;
+  position: relative;
+}
+.form .contForm .formInput .contPay .contRadioList .cashLabel .text::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 0.125rem solid rgba(51, 51, 51, 0.2509803922);
+  background-color: #f8f8f8;
+  width: 1.5rem;
+  height: 1.5rem;
+  bottom: 50%;
+  transform: translate(0%, 50%);
+  left: 0rem;
+}
+.form .contForm .formInput .contPay .contRadioList .cashLabel .text::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fed100;
+  box-shadow: 0rem 0rem 0rem 0.1563rem #fed100;
+  border: 0.375rem solid #ffffff;
+  width: 1.4063rem;
+  height: 1.4063rem;
+  bottom: 50%;
+  transform: translate(0%, 50%);
+  left: 0rem;
+  opacity: 0;
+}
+.form .contForm .formInput .contPay .contRadioList .cashLabel .cash:checked + .text::after {
+  opacity: 1;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contTextOptional {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contTextOptional .textPay {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #333;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contTextOptional .optionalArrow {
+  width: 1.0625rem;
+  height: 0.5rem;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  gap: 2.5rem;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .optionCheck {
+  display: none;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .textOption {
+  position: relative;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.314;
+  color: #333;
+  padding-left: 2.5rem;
+  text-wrap: nowrap;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .textOption::before {
+  content: "";
+  position: absolute;
+  border: 0.125rem solid rgba(51, 51, 51, 0.2509803922);
+  background-color: #f8f8f8;
+  width: 1.5rem;
+  height: 1.5rem;
+  bottom: 50%;
+  transform: translate(0%, 50%);
+  left: 0rem;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .textOption::after {
+  content: "";
+  position: absolute;
+  background-image: url(assets/img/galochka7f0a2f1ef56798e6fe97.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0rem 0rem 0rem 0.1563rem #fed100;
+  border: 0.375rem solid #ffffff;
+  width: 1.4063rem;
+  height: 1.4063rem;
+  bottom: 50%;
+  transform: translate(0%, 50%);
+  left: 0rem;
+  opacity: 0;
+}
+.form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .optionCheck:checked + .textOption::after {
+  opacity: 1;
+}
+.form .contForm .formInput .timeAndBuy {
+  display: flex;
+  gap: 4.125rem;
+}
+.form .contForm .formInput .timeAndBuy .textTime {
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 1.314;
+  color: #333;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .condentCheck {
+  display: none;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .textCondent {
+  position: relative;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+  font-variant: small-caps;
+  text-align: center;
+  color: #333;
+  padding-left: 1.5625rem;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .textCondent::before {
+  position: absolute;
+  content: "";
+  left: 0rem;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 0.6875rem;
+  height: 0.6875rem;
+  background: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 0.625rem 0.625rem;
+  box-shadow: 0rem 0rem 0rem 0.0938rem #333;
+  border: 0.0625rem solid #ffffff;
+  border-radius: 0.1875rem;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .textCondent::after {
+  position: absolute;
+  content: "";
+  left: 0rem;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 0.6875rem;
+  height: 0.6875rem;
+  background: url(assets/img/checkboxbd69759b14157c824c75.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 0.625rem 0.625rem;
+  box-shadow: 0rem 0rem 0rem 0.0938rem #333;
+  border: 0.0625rem solid #ffffff;
+  border-radius: 0.1875rem;
+  opacity: 0;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .condentCheck:checked + .textCondent::after {
+  opacity: 1;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton .contFormButton {
+  position: relative;
+  z-index: 10;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton .contFormButton .formButton {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  background-color: rgb(255, 53, 43);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f2f2f2;
+  width: 15.625rem;
+  height: 3.125rem;
+}
+.form .contForm .formInput .timeAndBuy .contBuyButton .contFormButton .formButtonWhiteRect {
+  z-index: 5;
+  top: 0.625rem;
+  left: 0.625rem;
+  position: absolute;
+  border: 0.125rem solid #fed100;
+  width: 15.625rem;
+  height: 3.125rem;
+}
+.form .contForm .formInput .buttonBuyMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding-top: 4.6875rem;
+    padding-bottom: 5.625rem;
+  }
+  .form .contForm {
+    max-width: 45.4375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form .contForm .formH2Mobile {
+    display: block;
+    text-align: center;
+  }
+  .form .contForm .formH2 {
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #333;
+    margin-bottom: 0.25rem;
+  }
+  .form .contForm .formH2 .formH2Desctop {
+    display: none;
+  }
+  .form .contForm .formH3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.314;
+    color: #333;
+    margin-bottom: 4.25rem;
+  }
+  .form .contForm .formInput {
+    padding-left: 0.6875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.4375rem;
+  }
+  .form .contForm .formInput .nameAndPhone {
+    display: flex;
+    gap: 4.375rem;
+  }
+  .form .contForm .formInput .nameAndPhone .inputName,
+  .form .contForm .formInput .nameAndPhone .inputPhone {
+    min-width: 18.125rem;
+    border: none;
+    border-bottom: 0.0625rem solid #333;
+    padding-left: 0rem;
+    height: 1.875rem;
+  }
+  .form .contForm .formInput .nameAndPhone .inputName::placeholder,
+  .form .contForm .formInput .nameAndPhone .inputPhone::placeholder {
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: rgba(51, 51, 51, 0.7);
+  }
+  .form .contForm .formInput .oblastAndSity {
+    display: flex;
+    gap: 4.5rem;
+    min-width: 18.75rem;
+  }
+  .form .contForm .formInput .oblastAndSity .oblast {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8125rem;
+    min-width: 18.75rem;
+  }
+  .form .contForm .formInput .oblastAndSity .oblast .textOblast {
+    font-weight: 700;
+    font-size: 1.625rem;
+    color: #333;
+  }
+  .form .contForm .formInput .oblastAndSity .oblast .oblastInput {
+    height: 1.875rem;
+    width: 100%;
+    border: none;
+    border-bottom: 0.0625rem solid #333;
+    color: rgba(51, 51, 51, 0.7);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .form .contForm .formInput .oblastAndSity .sity {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8125rem;
+    min-width: 18.75rem;
+  }
+  .form .contForm .formInput .oblastAndSity .sity .textSity {
+    font-weight: 700;
+    font-size: 1.625rem;
+    color: #333;
+  }
+  .form .contForm .formInput .oblastAndSity .sity .oblastInput {
+    height: 1.875rem;
+    width: 100%;
+    border: none;
+    border-bottom: 0.0625rem solid #333;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+  }
+  .form .contForm .formInput .contPay {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .form .contForm .formInput .contPay .textPay {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  .form .contForm .formInput .contPay .contRadioList {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .form .contForm .formInput .contPay .contRadioList .cashLabel .cash {
+    display: none;
+  }
+  .form .contForm .formInput .contPay .contRadioList .cashLabel .text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.314;
+    color: #333;
+    padding-left: 2.5rem;
+    position: relative;
+  }
+  .form .contForm .formInput .contPay .contRadioList .cashLabel .text::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 0.125rem solid rgba(51, 51, 51, 0.2509803922);
+    background-color: #f8f8f8;
+    width: 1.5rem;
+    height: 1.5rem;
+    bottom: 50%;
+    transform: translate(0%, 50%);
+    left: 0rem;
+  }
+  .form .contForm .formInput .contPay .contRadioList .cashLabel .text::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fed100;
+    box-shadow: 0rem 0rem 0rem 0.1563rem #fed100;
+    border: 0.375rem solid #ffffff;
+    width: 1.4063rem;
+    height: 1.4063rem;
+    bottom: 50%;
+    transform: translate(0%, 50%);
+    left: 0rem;
+    opacity: 0;
+  }
+  .form .contForm .formInput .contPay .contRadioList .cashLabel .cash:checked + .text::after {
+    opacity: 1;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contTextOptional {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contTextOptional .textPay {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contTextOptional .optionalArrow {
+    width: 1.0625rem;
+    height: 0.5rem;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    gap: 2.5rem;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .optionCheck {
+    display: none;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .textOption {
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.314;
+    color: #333;
+    padding-left: 2.5rem;
+    text-wrap: nowrap;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .textOption::before {
+    content: "";
+    position: absolute;
+    border: 0.125rem solid rgba(51, 51, 51, 0.2509803922);
+    background-color: #f8f8f8;
+    width: 1.5rem;
+    height: 1.5rem;
+    bottom: 50%;
+    transform: translate(0%, 50%);
+    left: 0rem;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .textOption::after {
+    content: "";
+    position: absolute;
+    background-image: url(assets/img/galochka7f0a2f1ef56798e6fe97.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0rem 0rem 0rem 0.1563rem #fed100;
+    border: 0.375rem solid #ffffff;
+    width: 1.4063rem;
+    height: 1.4063rem;
+    bottom: 50%;
+    transform: translate(0%, 50%);
+    left: 0rem;
+    opacity: 0;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList .contOptioanalItem .optionCheck:checked + .textOption::after {
+    opacity: 1;
+  }
+  .form .contForm .formInput .timeAndBuy {
+    display: flex;
+    justify-content: center;
+    gap: 4.125rem;
+  }
+  .form .contForm .formInput .timeAndBuy .textTime {
+    display: none;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 1.314;
+    color: #333;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent {
+    width: 20.875rem;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .condentCheck {
+    display: none;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .textCondent {
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    font-variant: small-caps;
+    text-align: center;
+    color: #333;
+    padding-left: 2.3125rem;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .textCondent::before {
+    position: absolute;
+    content: "";
+    left: 0.75rem;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 0.6875rem;
+    height: 0.6875rem;
+    background: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 0.625rem 0.625rem;
+    box-shadow: 0rem 0rem 0rem 0.0938rem #333;
+    border: 0.0625rem solid #ffffff;
+    border-radius: 0.125rem;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .textCondent::after {
+    position: absolute;
+    content: "";
+    left: 0.75rem;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 0.6875rem;
+    height: 0.6875rem;
+    background: url(assets/img/checkboxbd69759b14157c824c75.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 0.625rem 0.625rem;
+    box-shadow: 0rem 0rem 0rem 0.0938rem #333;
+    border: 0.0625rem solid #ffffff;
+    border-radius: 0.125rem;
+    opacity: 0;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .acceptCondent .condentCheck:checked + .textCondent::after {
+    opacity: 1;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .contFormButton {
+    position: relative;
+    z-index: 10;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .contFormButton .formButton {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 53, 43);
+    color: rgb(242, 242, 242);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #f2f2f2;
+    width: 18.4375rem;
+    height: 3.5625rem;
+  }
+  .form .contForm .formInput .timeAndBuy .contBuyButton .contFormButton .formButtonWhiteRect {
+    z-index: 5;
+    top: 0.625rem;
+    left: 0.625rem;
+    position: absolute;
+    border: 0.125rem solid #fed100;
+    width: 18.4375rem;
+    height: 3.5625rem;
+  }
+}
+@media (max-width: 720px) {
+  .form .contForm .formInput {
+    justify-content: center;
+    max-width: 42.5rem;
+  }
+  .form .contForm .formInput .nameAndPhone {
+    gap: 1.25rem;
+  }
+  .form .contForm .formInput .oblastAndSity {
+    gap: 1.25rem;
+  }
+  .form .contForm .formInput .contPay .contRadioList {
+    gap: 1.25rem;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList {
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 660px) {
+  .form .contForm .formInput .contPay .contRadioList {
+    flex-direction: column;
+  }
+  .form .contForm .formInput .contOptioanalService .contOptioanal .contOptionalList {
+    gap: 1.25rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form .contForm .formInput .nameAndPhone .inputName,
+  .form .contForm .formInput .nameAndPhone .inputPhone {
+    min-width: 12.5rem;
+  }
+  .form .contForm .formInput .nameAndPhone {
+    gap: 50px;
+  }
+  .form .contForm .formInput .oblastAndSity {
+    flex-direction: column;
+  }
+}
+@media (max-width: 470px) {
+  .form {
+    padding-top: 40px;
+    padding-bottom: 43px;
+  }
+  .form .contForm .formH2Mobile {
+    display: inline-block;
+    text-align: center;
+  }
+  .form .contForm .formH2 {
+    max-width: 220px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.249;
+    text-align: center;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  .form .contForm .formH2 .formH2Desctop {
+    display: none;
+  }
+  .form .contForm .formH3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.314;
+    color: #333;
+    margin-bottom: 43px;
+  }
+  .form .contForm .formInput {
+    padding-left: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+  }
+  .form .contForm .formInput .nameAndPhone {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .form .contForm .formInput .nameAndPhone .inputName,
+  .form .contForm .formInput .nameAndPhone .inputPhone {
+    width: 290px;
+    height: 36.84px;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding-left: 0px;
+  }
+  .form .contForm .formInput .nameAndPhone .inputName::placeholder,
+  .form .contForm .formInput .nameAndPhone .inputPhone::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.7);
+  }
+  .form .contForm .formInput .oblastAndSity {
+    display: none;
+  }
+  .form .contForm .formInput .contPay {
+    display: none;
+  }
+  .form .contForm .formInput .contOptioanalService {
+    display: none;
+  }
+  .form .contForm .formInput .timeAndBuy {
+    display: none;
+  }
+  .form .contForm .formInput .buttonBuyMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form .contForm .formInput .buttonBuyMobile .formButtonBuyMobile {
+    width: 289px;
+    height: 65px;
+    background-color: #ff352b;
+    display: grid;
+    place-items: center;
+  }
+  .form .contForm .formInput .buttonBuyMobile .formButtonBuyMobile .formButtonBuyMobileText {
+    font-weight: 500;
+    font-size: 20px;
+    color: #f2f2f2;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent {
+    width: 254px;
+    padding-top: 19px;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .condentCheck {
+    display: none;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .textCondent {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    font-variant: small-caps;
+    text-align: center;
+    color: #333;
+    padding-left: 2.3125rem;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .textCondent::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 13px;
+    height: 13px;
+    background: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 10px 10px;
+    box-shadow: 0px 0px 0px 1.5008px #333;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .textCondent::after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 13px;
+    height: 13px;
+    background: url(assets/img/checkboxbd69759b14157c824c75.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 10px 10px;
+    box-shadow: 0px 0px 0px 1.5008px #333;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    opacity: 0;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .condentCheck:checked + .textCondent::after {
+    opacity: 1;
+  }
+}
+@media (max-width: 320px) {
+  .form {
+    padding-top: 2.5rem;
+    padding-bottom: 2.6875rem;
+  }
+  .form .contForm .formH2Mobile {
+    display: inline-block;
+    text-align: center;
+  }
+  .form .contForm .formH2 {
+    max-width: 13.75rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.249;
+    text-align: center;
+    color: #333;
+    margin-bottom: 0.25rem;
+  }
+  .form .contForm .formH2 .formH2Desctop {
+    display: none;
+  }
+  .form .contForm .formH3 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.314;
+    color: #333;
+    margin-bottom: 2.6875rem;
+  }
+  .form .contForm .formInput {
+    padding-left: 0.6875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.8125rem;
+  }
+  .form .contForm .formInput .nameAndPhone {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .form .contForm .formInput .nameAndPhone .inputName,
+  .form .contForm .formInput .nameAndPhone .inputPhone {
+    width: 18.125rem;
+    height: 2.3025rem;
+    border: none;
+    border-bottom: 0.0625rem solid #333;
+    padding-left: 0rem;
+  }
+  .form .contForm .formInput .nameAndPhone .inputName::placeholder,
+  .form .contForm .formInput .nameAndPhone .inputPhone::placeholder {
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(51, 51, 51, 0.7);
+  }
+  .form .contForm .formInput .oblastAndSity {
+    display: none;
+  }
+  .form .contForm .formInput .contPay {
+    display: none;
+  }
+  .form .contForm .formInput .contOptioanalService {
+    display: none;
+  }
+  .form .contForm .formInput .timeAndBuy {
+    display: none;
+  }
+  .form .contForm .formInput .buttonBuyMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form .contForm .formInput .buttonBuyMobile .formButtonBuyMobile {
+    width: 18.0625rem;
+    height: 4.0625rem;
+    background-color: #ff352b;
+    display: grid;
+    place-items: center;
+  }
+  .form .contForm .formInput .buttonBuyMobile .formButtonBuyMobile .formButtonBuyMobileText {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #f2f2f2;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent {
+    width: 15.875rem;
+    padding-top: 1.1875rem;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .condentCheck {
+    display: none;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .textCondent {
+    position: relative;
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.01em;
+    font-variant: small-caps;
+    text-align: center;
+    color: #333;
+    padding-left: 37px;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .textCondent::before {
+    position: absolute;
+    content: "";
+    left: 0rem;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 0.8125rem;
+    height: 0.8125rem;
+    background: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 0.625rem 0.625rem;
+    box-shadow: 0rem 0rem 0rem 0.0938rem #333;
+    border: 0.0625rem solid #ffffff;
+    border-radius: 0.125rem;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .textCondent::after {
+    position: absolute;
+    content: "";
+    left: 0rem;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 0.8125rem;
+    height: 0.8125rem;
+    background: url(assets/img/checkboxbd69759b14157c824c75.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 0.625rem 0.625rem;
+    box-shadow: 0rem 0rem 0rem 0.0938rem #333;
+    border: 0.0625rem solid #ffffff;
+    border-radius: 0.125rem;
+    opacity: 0;
+  }
+  .form .contForm .formInput .buttonBuyMobile .acceptCondent .condentCheck:checked + .textCondent::after {
+    opacity: 1;
+  }
+}
+.map {
+  width: 100%;
+}
+.map .mapInteractive {
+  width: 100%;
+  height: 666px;
+}
+
+.mapMobileFooter {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .mapInteractive {
+    height: 666px !important;
+  }
+  .textTel,
+  .textCity,
+  .mapMailText {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.314;
+    color: #333;
+    text-align: center;
+  }
+  .textCity {
+    font-size: 40px;
+  }
+  .mapMobileFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 60px;
+    padding-bottom: 132px;
+  }
+  .mapMobileFooter .containerMapMail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .mapMobileFooter .containerMapMail .mapMailHr {
+    border: 1px solid #333;
+    width: 207px;
+    height: 0px;
+  }
+}
+@media (max-width: 470px) {
+  html {
+    font-size: 16px;
+  }
+  .mapInteractive {
+    height: 490px !important;
+  }
+  .textTel,
+  .textCity,
+  .mapMailText {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.314;
+    text-align: center;
+    color: #333;
+  }
+  .mapMobileFooter {
+    gap: 20.81px;
+    padding-top: 20.81px;
+    padding-bottom: 29px;
+  }
+  .mapMobileFooter .containerMapMail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  .mapMobileFooter .containerMapMail .mapMailHr {
+    width: 106px;
+  }
+}
 .autopark {
   display: flex;
   flex-direction: column;
@@ -1389,291 +2715,15 @@ main {
     height: 14.1875rem;
   }
 }
-@media (max-width: 298px) {
+@media (max-width: 318px) {
   html {
     font-size: 12px;
   }
 }
-.comment {
-  width: 100%;
-  padding-top: 6.125rem;
-  padding-bottom: 6rem;
-  background-color: #fed100;
-  display: flex;
-  justify-content: center;
-}
-.comment .contComment {
-  max-width: 81.5625rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3.75rem;
-}
-.comment .contComment .textCommentH2 {
-  font: 600 1.875rem "Montserrat", sans-serif;
-  color: #333;
-}
-.comment .contComment .listComment {
-  display: flex;
-  gap: 1.25rem;
-}
-.comment .contComment .listComment .itemComment {
-  width: 26.25rem;
-  height: 15.5rem;
-}
-.comment .contComment .listComment .itemComment .nickName {
-  font: 600 1.5rem "Montserrat", sans-serif;
-  color: #333;
-  margin-bottom: 0.625rem;
-}
-.comment .contComment .listComment .itemComment .dateAndMark {
-  display: flex;
-  gap: 0.5938rem;
-  margin-bottom: 1.25rem;
-}
-.comment .contComment .listComment .itemComment .dateAndMark .listMark {
-  display: flex;
-  gap: 0.0313rem;
-  width: 0.9375rem;
-  height: 0.9375rem;
-}
-.comment .contComment .listComment .itemComment .textComment {
-  font: 400 1rem/1.314 "Montserrat", sans-serif;
-  color: #333;
-}
-.comment .contComment .listComment .itemComment .readAllCont {
-  display: none;
-}
-.comment .contComment .buttonAllComment {
-  border: 0.0625rem solid #333;
-  display: grid;
-  place-items: center;
-  width: 15.625rem;
-  height: 3.125rem;
-  font: 500 1.25rem "Montserrat", sans-serif;
-  color: #333;
-}
-.comment .contComment .buttonAllComment p {
-  font: 500 1.25rem "Montserrat", sans-serif;
-  color: #333;
-}
-.comment .contComment .dots {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-  .comment {
-    width: 100%;
-    padding-top: 3.25rem;
-    padding-bottom: 2.875rem;
-    background-color: #fed100;
-    display: flex;
-    justify-content: center;
-  }
-  .comment .contComment {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0rem;
-    overflow: hidden;
-  }
-  .comment .contComment .textCommentH2 {
-    font: 600 1.875rem "Montserrat", sans-serif;
-    color: #333;
-    margin-bottom: 3.4375rem;
-  }
-  .comment .contComment .listComment {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 2.25rem;
-  }
-  .comment .contComment .listComment .itemComment {
-    width: 26.3125rem;
-    height: 16.625rem;
-  }
-  .comment .contComment .listComment .itemComment .nickName {
-    font: 600 1.5rem "Montserrat", sans-serif;
-    color: #333;
-    margin-bottom: 0.625rem;
-  }
-  .comment .contComment .listComment .itemComment .dateAndMark {
-    display: flex;
-    gap: 0.5938rem;
-    margin-bottom: 1.25rem;
-  }
-  .comment .contComment .listComment .itemComment .dateAndMark .listMark {
-    display: flex;
-    gap: 0.0313rem;
-    width: 0.9375rem;
-    height: 0.9375rem;
-  }
-  .comment .contComment .listComment .itemComment .textComment {
-    font: 400 1rem/1.314 "Montserrat", sans-serif;
-    color: #333;
-  }
-  .comment .contComment .listComment .itemComment .readAllCont {
-    display: inline-flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-  }
-  .comment .contComment .listComment .itemComment .readAllCont .readAll {
-    font: 400 1rem/1.314 "Montserrat", sans-serif;
-    color: #333;
-  }
-  .comment .contComment .listComment .itemComment .readAllCont .readAllHr {
-    border: 0.0625rem solid #333;
-    width: 100%;
-  }
-  .comment .contComment .dots {
-    position: relative;
-    width: 100%;
-    height: 0.625rem;
-    display: flex;
-    gap: 1.3125rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .comment .contComment .dots .dotsItem {
-    background-color: #333333;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-radius: 50%;
-    transform: rotate(-90deg);
-  }
-  .comment .contComment .dots .dotsItem.active {
-    width: 1.1563rem;
-    height: 1.1563rem;
-    border: 0.25rem solid #fed100;
-    background-color: #333333;
-    box-shadow: 0rem 0rem 0rem 0.125rem #333333;
-  }
-  .comment .contComment .buttonAllComment {
-    border: 0.0625rem solid #333;
-    display: grid;
-    place-items: center;
-    width: 250px;
-    height: 50px;
-    margin-top: 3.5rem;
-  }
-  .comment .contComment .buttonAllComment p {
-    font: 500 20px "Montserrat", sans-serif;
-    color: #333;
-  }
-}
-@media (max-width: 750px) {
-  html {
-    font-size: 14px;
-  }
-}
-@media (max-width: 580px) {
-  html {
-    font-size: 13px;
-  }
-}
-@media (max-width: 550px) {
+@media (max-width: 295px) {
   html {
     font-size: 11px;
   }
 }
-@media (max-width: 460px) {
-  html {
-    font-size: 9px;
-  }
-}
-@media (max-width: 410px) {
-  html {
-    font-size: 8px;
-  }
-}
-@media (max-width: 350px) {
-  html {
-    font-size: 8px;
-  }
-}
-@media (max-width: 440px) {
-  .comment {
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 65px;
-    background-color: #fed100;
-    display: flex;
-    justify-content: center;
-  }
-  .comment .contComment {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0rem;
-    overflow: hidden;
-  }
-  .comment .contComment .textCommentH2 {
-    font: 600 20px "Montserrat", sans-serif;
-    color: #333;
-    margin-bottom: 40px;
-  }
-  .comment .contComment .listComment {
-    display: flex;
-    gap: 1.25rem;
-    margin-bottom: 48px;
-  }
-  .comment .contComment .listComment .itemComment {
-    width: 303px;
-    height: 224px;
-  }
-  .comment .contComment .listComment .itemComment .nickName {
-    font: 500 18px "Montserrat", sans-serif;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  .comment .contComment .listComment .itemComment .dateAndMark {
-    display: flex;
-    gap: 9.5008px;
-    margin-bottom: 20px;
-  }
-  .comment .contComment .listComment .itemComment .dateAndMark .listMark {
-    display: flex;
-    gap: 0.5008px;
-    width: 15px;
-    height: 15px;
-  }
-  .comment .contComment .listComment .itemComment .textComment {
-    font: 400 16px/1.314 "Montserrat", sans-serif;
-    color: #333;
-    margin-bottom: 14px;
-  }
-  .comment .contComment .listComment .itemComment .readAllCont {
-    display: inline-flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-  }
-  .comment .contComment .listComment .itemComment .readAllCont .readAll {
-    font: 500 16px/1.314 "Montserrat", sans-serif;
-    color: #333;
-  }
-  .comment .contComment .listComment .itemComment .readAllCont .readAllHr {
-    border: 0.0625rem solid #333;
-    width: 100%;
-  }
-  .comment .contComment .dots {
-    display: none;
-  }
-  .comment .contComment .buttonAllComment {
-    display: grid;
-    place-items: center;
-    border: 1px solid #333;
-    width: 292px;
-    height: 60px;
-    margin-top: 3.5rem;
-  }
-  .comment .contComment .buttonAllComment p {
-    font: 500 20px "Montserrat", sans-serif;
-    color: #333;
-  }
-}
+
+/*# sourceMappingURL=style.css.map*/

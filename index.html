@@ -402,6 +402,180 @@
           <a class="buttonAllComment"><p>Все отзывы</p></a>
         </div>
       </section>
+      <section class="form">
+        <div class="contForm">
+          <h2 class="formH2">
+            Закажи переезд прямо
+            <span class="formH2Mobile">сейчас</span>
+            <span class="formH2Desctop">со скидкой %</span>
+          </h2>
+          <h3 class="formH3">Мы перезвоним в течении 10 секунд</h3>
+          <div class="formInput">
+            <div class="nameAndPhone">
+              <input type="text" class="inputName" placeholder="Ваше имя" />
+              <input type="tel" class="inputPhone" placeholder="Телефон" />
+            </div>
+            <div class="oblastAndSity">
+              <div class="oblast">
+                <p class="textOblast">Укажите область</p>
+                <select name="oblast" id="oblast" class="oblastInput">
+                  <option value="" selected hidden class="placeholder">
+                    Например: Минская
+                  </option>
+                  <option value="Минская">Минская</option>
+                  <option value="Брестская">Брестская</option>
+                  <option value="Гомельская">Гомельская</option>
+                </select>
+              </div>
+              <div class="sity">
+                <p class="textSity">Укажите город</p>
+                <select name="oblast" id="oblast" class="oblastInput">
+                  <option value="Минск">Минск</option>
+                  <option value="Брест">Брест</option>
+                  <option value="Гомель">Гомель</option>
+                </select>
+              </div>
+            </div>
+            <div class="contPay">
+              <h3 class="textPay">Способ оплаты</h3>
+              <div class="contRadioList">
+                <label class="cashLabel">
+                  <input type="radio" name="pay" class="cash" />
+                  <span class="text">Наличными курьеру</span>
+                </label>
+                <label class="cashLabel">
+                  <input type="radio" name="pay" class="cash" />
+                  <span class="text">Картой курьеру</span>
+                </label>
+                <label class="cashLabel">
+                  <input type="radio" name="pay" class="cash" />
+                  <span class="text">Банковский перевод</span>
+                </label>
+              </div>
+            </div>
+            <div class="contOptioanalService">
+              <div class="contOptioanal">
+                <div class="contTextOptional">
+                  <h3 class="textPay">Дополнительные услуги</h3>
+                  <img
+                    src="./img/form/arrowTop.svg"
+                    alt="arrow"
+                    class="optionalArrow"
+                  />
+                </div>
+
+                <div class="contOptionalList">
+                  <label class="contOptioanalItem">
+                    <input type="checkbox" name="option" class="optionCheck" />
+                    <span class="textOption">Наличными курьеру</span>
+                  </label>
+                  <label class="contOptioanalItem">
+                    <input type="checkbox" name="option" class="optionCheck" />
+                    <span class="textOption">
+                      Упаковка для хрупких предметов
+                    </span>
+                  </label>
+                  <label class="contOptioanalItem">
+                    <input type="checkbox" name="option" class="optionCheck" />
+                    <span class="textOption">Кран</span>
+                  </label>
+                  <label class="contOptioanalItem">
+                    <input type="checkbox" name="option" class="optionCheck" />
+                    <span class="textOption">Сборка мебели</span>
+                  </label>
+                  <label class="contOptioanalItem">
+                    <input type="checkbox" name="option" class="optionCheck" />
+                    <span class="textOption">Крупногабаритные предметы</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="timeAndBuy">
+              <p class="textTime">05:37:25</p>
+              <div class="contBuyButton">
+                <div class="contFormButton">
+                  <a href="#" class="formButton">Заказать со скидой</a>
+                  <div class="formButtonWhiteRect"></div>
+                </div>
+                <label class="acceptCondent">
+                  <input type="checkbox" name="Condent" class="condentCheck" />
+                  <span class="textCondent">
+                    Даю согласие на обработку данных
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="buttonBuyMobile">
+              <a href="#" class="formButtonBuyMobile">
+                <p class="formButtonBuyMobileText">Перезвонить мне</p>
+              </a>
+              <label class="acceptCondent">
+                <input type="checkbox" name="Condent" class="condentCheck" />
+                <span class="textCondent">
+                  Даю согласие на обработку данных
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d612.8443329715952!2d23.69669023204409!3d52.091064018749144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bf0d6c7cb8f%3A0x5d0b2cc4f645f8ca!2z0YPQuy4g0JHRg9C00ZHQvdC90L7Qs9C-IDY0LCDQkdGA0LXRgdGCLCDQkdGA0LXRgdGC0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sfr!4v1731802545348!5m2!1sru!2sfr"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="mapInteractive"
+        ></iframe>
+      </section>
+      <section class="mapMobileFooter">
+        <p class='textCity'>Брест</pс>
+        <p class='textTel'>8 (029)-999-12-13</p>
+        <div class='containerMapMail'>
+          <p class='mapMailText'>hello@movee.ru</p>
+          <hr class='mapMailHr'>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="containerFooter">
+          <div class="infoContainer">
+            <p>MOVING</p>
+            <p>Политика конфиденциальнности</p>
+            <p>Соглашение на обработку персональных данных</p>
+          </div>
+          <div class="movingContainer">
+            <p>Главная</p>
+            <p>Цена</p>
+            <p>Автопарк</p>
+            <p>Отзывы</p>
+            <p>Контакты</p>
+          </div>
+          <div class="socialContainer">
+            <a href="#"><p>Обратный звонок</p></a>
+            <a
+              href="tel:+80299991213
+            "
+            >
+              8 (029)-999-12-13
+            </a>
+            <div class="listSocial">
+              <a href="#" class="iconSocialFooter">
+                <img src="#" alt="youtube" class="iconImgSocialFooter" />
+              </a>
+              <a href="#" class="iconSocialFooter">
+                <img src="#" alt="youtube" class="iconImgSocialFooter" />
+              </a>
+              <a href="#" class="iconSocialFooter">
+                <img src="#" alt="youtube" class="iconImgSocialFooter" />
+              </a>
+              <a href="#" class="iconSocialFooter">
+                <img src="#" alt="youtube" class="iconImgSocialFooter" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="./dist/bundle.js"></script>
   </body>

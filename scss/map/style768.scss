@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .mapInteractive {
+    height: 666px !important;
+  }
+
+  .textTel,
+  .textCity,
+  .mapMailText {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.314;
+    color: #333;
+    text-align: center;
+  }
+  .textCity {
+    font-size: 40px;
+  }
+  .mapMobileFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 60px;
+    padding-bottom: 132px;
+    .containerMapMail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      .mapMailHr {
+        border: 1px solid #333;
+        width: 207px;
+        height: 0px;
+      }
+    }
+  }
+}
