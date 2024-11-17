@@ -1,2 +1,95 @@
-@media (max-width: 470px) {
+@media (max-width: 420px) {
+  .footer {
+    width: 100%;
+    padding-top: 59px;
+    padding-bottom: 50px;
+    .containerFooter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 0px;
+      .infoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 238px;
+        height: auto;
+        p:nth-of-type(1) {
+          font-weight: 600;
+          font-size: 30px;
+          color: #333;
+          margin-bottom: 35.43px;
+        }
+
+        p:nth-of-type(2),
+        p:nth-of-type(3) {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.304;
+          font-variant: small-caps;
+          text-align: center;
+          color: #333;
+          margin-bottom: 17.65px;
+          text-wrap: wrap;
+        }
+        p:nth-of-type(3) {
+          margin-bottom: 45.11px;
+        }
+      }
+      .movingContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 15.69px;
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          text-align: center;
+          color: #333;
+        }
+        p:last-of-type {
+          margin-bottom: 21.52px;
+        }
+      }
+      .socialContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 42.8px;
+        .buttonCall {
+          display: grid;
+          place-items: center;
+          border: 1px solid #333;
+          width: 292px;
+          height: 58px;
+          margin-bottom: 0px;
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            color: #333;
+          }
+        }
+        .Number {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1.314;
+          text-align: center;
+          color: #333;
+          border-bottom: 1px solid #333;
+          margin-bottom: 3px;
+        }
+        .listSocial {
+          display: flex;
+          gap: 30px;
+          margin-left: 0px;
+          a {
+            img {
+              width: 32px;
+              height: 29px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
