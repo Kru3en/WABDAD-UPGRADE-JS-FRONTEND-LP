@@ -78,8 +78,10 @@
     .navContainer {
       .contLogo {
         .logoText {
-          position: fixed;
           z-index: 1000;
+        }
+        .logoText.active {
+          position: fixed;
         }
       }
       .navListMob {

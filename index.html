@@ -24,7 +24,7 @@
           <li class="navLink">Отзывы</li>
           <li class="navLink">Контакты</li>
         </ul>
-        <ul class="navListMob active">
+        <ul class="navListMob">
           <li class="navLink">Главная</li>
           <li class="navLink">Цена</li>
           <li class="navLink">Автопарк</li>
@@ -36,7 +36,7 @@
           8(029)-999-12-13
           <hr class="hrTel" />
         </a>
-        <div class="burger-icon active">
+        <div class="burger-icon">
           <span></span>
         </div>
       </nav>
@@ -226,7 +226,7 @@
           </div>
         </div>
       </section>
-      <section class="autopark">
+      <section class="autopark" id='autopark'>
         <div class="contAutopark">
           <div class="contTitleText">
             <h2 class="priceTitleTextH2">Автопарк</h2>
@@ -236,15 +236,15 @@
           </div>
           <div class="contSlider">
             <div class="contButtonSlider">
-              <a href="#" class="buttonSlider active">
+              <a href="#autopark" class="buttonSlider">
                 Газели
-                <hr class="mobHrActive active" />
+                <hr class="mobHrActive" />
               </a>
-              <a href="#" class="buttonSlider">
+              <a href="#autopark" class="buttonSlider">
                 Каблуки
                 <hr class="mobHrActive" />
               </a>
-              <a href="#" class="buttonSlider">
+              <a href="#autopark" class="buttonSlider">
                 Грузовики
                 <hr class="mobHrActive" />
               </a>
@@ -254,8 +254,9 @@
                 src="./img/autoParck/left.svg"
                 alt="leftArrow"
                 class="sliderArrow"
+                onclick='showPrevSlide()'
               />
-              <div class="contSliderItem">
+              <div class="contSliderItem ">
                 <div class="contSliderDescription">
                   <h3 class="descrtiptionTitle">
                     Газель 3 метра
@@ -315,10 +316,127 @@
                   class="imgBig"
                 />
               </div>
+              <div class="contSliderItem">
+                <div class="contSliderDescription">
+                  <h3 class="descrtiptionTitle">
+                    Каблук 2 метра 
+                  </h3>
+                  <div class="contSliderDescriptionList">
+                    <div class="contSliderDescriptionItem">
+                      <img
+                        src="./img/autoParck/checkIcon.svg"
+                        alt="check"
+                        class="iconCheck"
+                      />
+                      <p class="textCheck">Ширина 1.8 м</p>
+                    </div>
+                    <div class="contSliderDescriptionItem">
+                      <img
+                        src="./img/autoParck/checkIcon.svg"
+                        alt="check"
+                        class="iconCheck"
+                      />
+                      <p class="textCheck">Высота 1.2 м</p>
+                    </div>
+                    <div class="contSliderDescriptionItem">
+                      <img
+                        src="./img/autoParck/checkIcon.svg"
+                        alt="check"
+                        class="iconCheck"
+                      />
+                      <p class="textCheck">Объем 8 м³</p>
+                    </div>
+                    <div class="contSliderDescriptionItem">
+                      <img
+                        src="./img/autoParck/checkIcon.svg"
+                        alt="check"
+                        class="iconCheck"
+                      />
+                      <p class="textCheck">Грузоподъемность 0.8 т</p>
+                    </div>
+                  </div>
+
+                  <div class="dots">
+                    <div class="dotsItem big"></div>
+                    <div class="dotsItem"></div>
+                    <div class="dotsItem"></div>
+                    <div class="dotsItem"></div>
+                    <div class="dotsItem"></div>
+                  </div>
+
+                  <div class="contButtonBuy">
+                    <a href="#" class="buttonBuyAvto">Заказать</a>
+                  </div>
+                </div>
+                <img
+                  src="./img/autoParck/kabluck.png"
+                  alt="kabluck"
+                  class="imgBig"
+                />
+              </div>
+              <div class="contSliderItem active">
+                <div class="contSliderDescription">
+                  <h3 class="descrtiptionTitle">
+                    Грузовик 3 метра 
+                  </h3>
+                  <div class="contSliderDescriptionList">
+                    <div class="contSliderDescriptionItem">
+                      <img
+                        src="./img/autoParck/checkIcon.svg"
+                        alt="check"
+                        class="iconCheck"
+                      />
+                      <p class="textCheck">Ширина 3 м</p>
+                    </div>
+                    <div class="contSliderDescriptionItem">
+                      <img
+                        src="./img/autoParck/checkIcon.svg"
+                        alt="check"
+                        class="iconCheck"
+                      />
+                      <p class="textCheck">Высота 3 м</p>
+                    </div>
+                    <div class="contSliderDescriptionItem">
+                      <img
+                        src="./img/autoParck/checkIcon.svg"
+                        alt="check"
+                        class="iconCheck"
+                      />
+                      <p class="textCheck">Объем 20 м³</p>
+                    </div>
+                    <div class="contSliderDescriptionItem">
+                      <img
+                        src="./img/autoParck/checkIcon.svg"
+                        alt="check"
+                        class="iconCheck"
+                      />
+                      <p class="textCheck">Грузоподъемность 2 т</p>
+                    </div>
+                  </div>
+
+                  <div class="dots">
+                    <div class="dotsItem big"></div>
+                    <div class="dotsItem"></div>
+                    <div class="dotsItem"></div>
+                    <div class="dotsItem"></div>
+                    <div class="dotsItem"></div>
+                  </div>
+
+                  <div class="contButtonBuy">
+                    <a href="#" class="buttonBuyAvto">Заказать</a>
+                  </div>
+                </div>
+                <img
+                  src="./img/autoParck/gruzovik.png"
+                  alt="gruzovik"
+                  class="imgBig"
+                />
+              </div>
               <img
                 src="./img/autoParck/right.svg"
                 alt="rightArrow"
                 class="sliderArrow"
+                onclick='showNextSlide()'
               />
             </div>
           </div>
@@ -590,5 +708,5 @@
   <script src="./js/L12.js"></script>
   <script src="./js/L13.js"></script>
   <script src="./js/L14.js"></script>
-
+  <script src="./js/L15.js"></script>
 </html>

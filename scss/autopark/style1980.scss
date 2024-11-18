@@ -59,8 +59,11 @@
           width: 0.4219rem;
           height: 0.9844rem;
         }
-        .contSliderItem {
+        .contSliderItem.active{
           display: flex;
+        }
+        .contSliderItem {
+          display: none;
           align-items: center;
           gap: 6.875rem;
           .contSliderDescription {

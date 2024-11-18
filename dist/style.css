@@ -634,8 +634,10 @@ span {
 }
 @media (max-width: 440px) {
   body .header .navContainer .contLogo .logoText {
-    position: fixed;
     z-index: 1000;
+  }
+  body .header .navContainer .contLogo .logoText.active {
+    position: fixed;
   }
   body .header .navContainer .navListMob {
     padding-top: 117px;
@@ -2750,8 +2752,11 @@ main {
   width: 0.4219rem;
   height: 0.9844rem;
 }
-.autopark .contAutopark .contSlider .contSliderContent .contSliderItem {
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem.active {
   display: flex;
+}
+.autopark .contAutopark .contSlider .contSliderContent .contSliderItem {
+  display: none;
   align-items: center;
   gap: 6.875rem;
 }
@@ -2880,7 +2885,7 @@ main {
     display: none;
   }
   .autopark .contAutopark .contSlider .contSliderContent .contSliderItem {
-    display: flex;
+    display: none;
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
@@ -3041,7 +3046,7 @@ main {
     display: none;
   }
   .autopark .contAutopark .contSlider .contSliderContent .contSliderItem {
-    display: flex;
+    display: none;
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
